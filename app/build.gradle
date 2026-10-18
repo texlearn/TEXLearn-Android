@@ -1,0 +1,26 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.samrambakeralam.texlearn'
+    compileSdk 35
+
+    defaultConfig {
+        applicationId 'com.samrambakeralam.texlearn'
+        minSdk 23
+        targetSdk 34
+        versionCode 1
+        versionName '1.0.0'
+    }
+
+    buildTypes {
+        debug {
+            applicationIdSuffix '.debug'
+            versionNameSuffix '-debug'
+        }
+        release {
+            minifyEnabled false
+        }
+    }
+}
