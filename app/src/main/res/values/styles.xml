@@ -1,5 +1,4 @@
 
-<?xml version="1.0" encoding="utf-8"?>
 <resources>
 
     <!-- Existing app theme -->
@@ -19,7 +18,7 @@
         <item name="android:windowBackground">#FFFFFF</item>
     </style>
 
-    <!-- Splash screen shown when the app launches -->
+    <!-- Splash screen -->
     <style name="Theme.TEXLearn.Splash" parent="Theme.SplashScreen">
         <item name="windowSplashScreenBackground">#FFFFFF</item>
         <item name="windowSplashScreenAnimatedIcon">@drawable/ic_launcher_foreground</item>
