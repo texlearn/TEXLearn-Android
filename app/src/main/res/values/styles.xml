@@ -1,10 +1,17 @@
+
 <resources>
     <style name="AppTheme" parent="android:style/Theme.Material.Light.NoActionBar">
         <item name="android:fontFamily">sans</item>
         <item name="android:colorAccent">#16866A</item>
-        <item name="android:statusBarColor">#0B1F3A</item>
-        <item name="android:navigationBarColor">#0B1F3A</item>
-        <item name="android:windowLightStatusBar">false</item>
+
+        <!-- Light mint-green top status bar -->
+        <item name="android:statusBarColor">#EAF8F0</item>
+        <item name="android:windowLightStatusBar">true</item>
+
+        <!-- White bottom navigation bar -->
+        <item name="android:navigationBarColor">#FFFFFF</item>
+        <item name="android:windowLightNavigationBar">true</item>
+
         <item name="android:windowActionModeOverlay">true</item>
         <item name="android:windowBackground">#FFFFFF</item>
     </style>
