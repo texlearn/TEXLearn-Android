@@ -36,6 +36,9 @@ android {
     }
 }
 
+
 dependencies {
     implementation 'com.razorpay:checkout:1.6.41'
+    implementation 'androidx.core:core-splashscreen:1.0.1'
 }
+
