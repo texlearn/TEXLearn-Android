@@ -1,6 +1,7 @@
 
 package com.samrambakeralam.texlearn
 
+import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import android.annotation.SuppressLint
 import android.app.Activity
 import android.app.DownloadManager
@@ -55,10 +56,11 @@ class MainActivity : Activity(), PaymentResultWithDataListener {
 
     @SuppressLint("SetJavaScriptEnabled")
     override fun onCreate(savedInstanceState: Bundle?) {
+        installSplashScreen()
         super.onCreate(savedInstanceState)
 
-        window.statusBarColor = Color.rgb(11, 31, 58)
-        window.navigationBarColor = Color.rgb(11, 31, 58)
+        window.statusBarColor = Color.rgb(234, 248, 240)
+        window.navigationBarColor = Color.WHITE
 
         val root = FrameLayout(this).apply {
             setBackgroundColor(Color.WHITE)
