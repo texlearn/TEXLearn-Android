@@ -1,10 +1,13 @@
 
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
+
+    <!-- Existing app theme -->
     <style name="AppTheme" parent="android:style/Theme.Material.Light.NoActionBar">
         <item name="android:fontFamily">sans</item>
         <item name="android:colorAccent">#16866A</item>
 
-        <!-- Light mint-green top status bar -->
+        <!-- Light mint-green status bar -->
         <item name="android:statusBarColor">#EAF8F0</item>
         <item name="android:windowLightStatusBar">true</item>
 
@@ -15,4 +18,12 @@
         <item name="android:windowActionModeOverlay">true</item>
         <item name="android:windowBackground">#FFFFFF</item>
     </style>
+
+    <!-- Splash screen shown when the app launches -->
+    <style name="Theme.TEXLearn.Splash" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">#FFFFFF</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_launcher_foreground</item>
+        <item name="postSplashScreenTheme">@style/AppTheme</item>
+    </style>
+
 </resources>
