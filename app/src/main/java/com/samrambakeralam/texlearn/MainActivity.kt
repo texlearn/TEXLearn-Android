@@ -71,8 +71,10 @@ class MainActivity : Activity() {
 
         val settings = webView.settings
         settings.javaScriptEnabled = true
-        settings.domStorageEnabled = true
-        settings.textZoom = 90
+        settings.domStorageEnabled = true   
+        settings.textZoom = 100
+        settings.useWideViewPort = true
+        settings.loadWithOverviewMode = false
         settings.databaseEnabled = true
         settings.loadsImagesAutomatically = true
         settings.javaScriptCanOpenWindowsAutomatically = true
