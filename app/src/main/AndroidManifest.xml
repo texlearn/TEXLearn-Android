@@ -36,8 +36,8 @@
                 <data
                     android:scheme="https"
                     android:host="samrambakeralam.github.io"
-                    android:pathPrefix="/TEXLearn/" />
+                    android:pathPrefix="/TEXLearn" />
              </intent-filter>
-          </activity>
+           </activity>
      </application>
  </manifest>
