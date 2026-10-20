@@ -220,10 +220,18 @@ class MainActivity : Activity(), PaymentResultWithDataListener {
             }
         )
 
-        Checkout.preload(applicationContext)
+               Checkout.preload(applicationContext)
 
         if (savedInstanceState == null) {
-            webView.loadUrl(START_URL)
+            val incomingUrl = intent?.dataString
+
+            if (!incomingUrl.isNullOrBlank() &&
+                isTEXLearnAccessUrl(incomingUrl)
+            ) {
+                webView.loadUrl(incomingUrl)
+            } else {
+                webView.loadUrl(START_URL)
+            }
         } else {
             webView.restoreState(savedInstanceState)
         }
@@ -329,6 +337,23 @@ class MainActivity : Activity(), PaymentResultWithDataListener {
         }
     }
 
+
+private fun isTEXLearnAccessUrl(rawUrl: String): Boolean {
+    return try {
+        val uri = Uri.parse(rawUrl)
+        val path = uri.path
+
+        uri.scheme == "https" &&
+            uri.host == "samrambakeralam.github.io" &&
+            (path == "/TEXLearn" || path == "/TEXLearn/") &&
+            !uri.getQueryParameter("cid").isNullOrBlank() &&
+            !uri.getQueryParameter("t").isNullOrBlank()
+    } catch (_: Exception) {
+        false
+    }
+}
+
+
     private fun routeUrl(rawUrl: String): Boolean {
         val uri = try {
             Uri.parse(rawUrl)
@@ -399,6 +424,19 @@ class MainActivity : Activity(), PaymentResultWithDataListener {
             ).show()
         }
     }
+
+override fun onNewIntent(intent: Intent) {
+    super.onNewIntent(intent)
+    setIntent(intent)
+
+    val incomingUrl = intent.dataString
+
+    if (!incomingUrl.isNullOrBlank() &&
+        isTEXLearnAccessUrl(incomingUrl)
+    ) {
+        webView.loadUrl(incomingUrl)
+    }
+}
 
     override fun onSaveInstanceState(outState: Bundle) {
         webView.saveState(outState)
