@@ -24,6 +24,7 @@ import android.webkit.WebView
 import android.webkit.WebViewClient
 import android.widget.FrameLayout
 import android.widget.ProgressBar
+import android.util.Log
 import android.widget.Toast
 import com.razorpay.Checkout
 import com.razorpay.PaymentData
@@ -311,17 +312,24 @@ class MainActivity : Activity(), PaymentResultWithDataListener {
         }
     }
 
-    override fun onPaymentError(
-        code: Int,
-        response: String?,
-        paymentData: PaymentData
-    ) {
-        runOnUiThread {
-            notifyWebError(
-                response ?: "Payment was not completed."
-            )
-        }
+   
+override fun onPaymentError(
+    code: Int,
+    response: String?,
+    paymentData: PaymentData
+) {
+    Log.e(
+        "TEXLearnPayment",
+        "Razorpay error code: $code | response: $response"
+    )
+
+    runOnUiThread {
+        notifyWebError(
+            response ?: "Payment was not completed."
+        )
     }
+}
+
 
     private fun notifyWebError(message: String) {
         if (!::webView.isInitialized) return
