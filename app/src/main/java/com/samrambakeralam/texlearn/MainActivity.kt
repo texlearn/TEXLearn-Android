@@ -1,6 +1,7 @@
 
 package com.samrambakeralam.texlearn
 
+import android.webkit.ConsoleMessage
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import android.annotation.SuppressLint
 import android.app.Activity
@@ -156,18 +157,35 @@ class MainActivity : Activity(), PaymentResultWithDataListener {
             }
         }
 
-        webView.webChromeClient = object : WebChromeClient() {
-            override fun onProgressChanged(
-                view: WebView,
-                newProgress: Int
-            ) {
-                progressBar.progress = newProgress
+     
+webView.webChromeClient = object : WebChromeClient() {
 
-                progressBar.visibility =
-                    if (newProgress in 1..99) View.VISIBLE
-                    else View.GONE
-            }
-        }
+    override fun onProgressChanged(
+        view: WebView,
+        newProgress: Int
+    ) {
+        progressBar.progress = newProgress
+
+        progressBar.visibility =
+            if (newProgress in 1..99) View.VISIBLE
+            else View.GONE
+    }
+
+    override fun onConsoleMessage(
+        consoleMessage: ConsoleMessage
+    ): Boolean {
+        Log.d(
+            "TEXLearnPayment",
+            "JS ${consoleMessage.messageLevel()} | " +
+                "${consoleMessage.message()} | " +
+                "${consoleMessage.sourceId()}:" +
+                consoleMessage.lineNumber()
+        )
+
+        return true
+    }
+}
+
 
         webView.setDownloadListener(
             DownloadListener {
@@ -289,30 +307,64 @@ class MainActivity : Activity(), PaymentResultWithDataListener {
         }
     }
 
-    override fun onPaymentSuccess(
-        razorpayPaymentID: String?,
-        paymentData: PaymentData
-    ) {
-        runOnUiThread {
-            try {
-                val data = paymentData.data
+    
+override fun onPaymentSuccess(
+    razorpayPaymentID: String?,
+    paymentData: PaymentData
+) {
+    Log.i(
+        "TEXLearnPayment",
+        "Native onPaymentSuccess ENTERED"
+    )
 
-                // Forward the SDK response to the website's existing
-                // verification function. The server must verify it.
-                webView.evaluateJavascript(
-                    "window.onNativeRazorpaySuccess && " +
-                        "window.onNativeRazorpaySuccess($data);",
-                    null
-                )
-            } catch (_: Exception) {
-                notifyWebError(
-                    "Payment returned, but its response could not be read."
+    runOnUiThread {
+        try {
+            val data = paymentData.data
+
+            val script =
+                """
+                (() => {
+                    if (
+                        typeof window.onNativeRazorpaySuccess
+                        !== 'function'
+                    ) {
+                        return 'HANDLER_MISSING';
+                    }
+
+                    try {
+                        window.onNativeRazorpaySuccess($data);
+                        return 'HANDLER_INVOKED';
+                    } catch (e) {
+                        return 'JS_THROW: ' +
+                            String(e && (e.stack || e));
+                    }
+                })()
+                """.trimIndent()
+
+            webView.evaluateJavascript(script) { result ->
+                Log.i(
+                    "TEXLearnPayment",
+                    "Success bridge result: $result"
                 )
             }
+
+        } catch (error: Exception) {
+            Log.e(
+                "TEXLearnPayment",
+                "Success callback forwarding failed",
+                error
+            )
+
+            notifyWebError(
+                "Payment returned, but its response could not be read."
+            )
         }
     }
+}
+
 
    
+
 override fun onPaymentError(
     code: Int,
     response: String?,
@@ -320,15 +372,43 @@ override fun onPaymentError(
 ) {
     Log.e(
         "TEXLearnPayment",
-        "Razorpay error code: $code | response: $response"
+        "Native onPaymentError ENTERED | code=$code"
     )
 
     runOnUiThread {
-        notifyWebError(
+        val safeMessage = JSONObject.quote(
             response ?: "Payment was not completed."
         )
+
+        val script =
+            """
+            (() => {
+                if (
+                    typeof window.onNativeRazorpayError
+                    !== 'function'
+                ) {
+                    return 'HANDLER_MISSING';
+                }
+
+                try {
+                    window.onNativeRazorpayError($safeMessage);
+                    return 'HANDLER_INVOKED';
+                } catch (e) {
+                    return 'JS_THROW: ' +
+                        String(e && (e.stack || e));
+                }
+            })()
+            """.trimIndent()
+
+        webView.evaluateJavascript(script) { result ->
+            Log.i(
+                "TEXLearnPayment",
+                "Error bridge result: $result"
+            )
+        }
     }
 }
+
 
 
     private fun notifyWebError(message: String) {
