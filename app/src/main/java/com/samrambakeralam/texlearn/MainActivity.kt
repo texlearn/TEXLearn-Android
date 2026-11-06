@@ -245,10 +245,13 @@ webView.webChromeClient = object : WebChromeClient() {
         if (savedInstanceState == null) {
             val incomingUrl = intent?.dataString
 
-            if (!incomingUrl.isNullOrBlank() &&
-            (isTEXLearnAccessUrl(incomingUrl) ||
-            isTEXLearnReferralUrl(incomingUrl))
-            ) {
+           if (!incomingUrl.isNullOrBlank() &&
+    (
+        isTEXLearnAccessUrl(incomingUrl) ||
+        isTEXLearnReferralUrl(incomingUrl) ||
+        isTEXLearnAffiliateUrl(incomingUrl)
+    )
+) {
             webView.loadUrl(incomingUrl)
         } else {
             webView.loadUrl(START_URL)
@@ -492,6 +495,26 @@ private fun isTEXLearnReferralUrl(rawUrl: String): Boolean {
     }
 }
 
+private fun isTEXLearnAffiliateUrl(rawUrl: String): Boolean {
+    return try {
+        val uri = Uri.parse(rawUrl)
+
+        uri.scheme == "https" &&
+            (
+                (
+                    uri.host == "texlearn.in" &&
+                    uri.path == "/affiliate.html"
+                ) ||
+                (
+                    uri.host == "samrambakeralam.github.io" &&
+                    uri.path == "/TEXLearn/affiliate.html"
+                )
+            )
+
+    } catch (_: Exception) {
+        false
+    }
+}
 
     private fun routeUrl(rawUrl: String): Boolean {
         val uri = try {
@@ -571,8 +594,11 @@ override fun onNewIntent(intent: Intent) {
     val incomingUrl = intent.dataString
 
     if (!incomingUrl.isNullOrBlank() &&
-        (isTEXLearnAccessUrl(incomingUrl) ||
-        isTEXLearnReferralUrl(incomingUrl))
+        (
+            isTEXLearnAccessUrl(incomingUrl) ||
+            isTEXLearnReferralUrl(incomingUrl) ||
+            isTEXLearnAffiliateUrl(incomingUrl)
+        )
     ) {
         webView.loadUrl(incomingUrl)
     }
