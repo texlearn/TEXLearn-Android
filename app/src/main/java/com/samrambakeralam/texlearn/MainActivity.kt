@@ -41,9 +41,10 @@ class MainActivity : Activity(), PaymentResultWithDataListener {
 
     companion object {
         private const val START_URL =
-            "https://samrambakeralam.github.io/TEXLearn/"
+            "https://texlearn.in/"
 
         private val INTERNAL_HOSTS = setOf(
+            "texlearn.in",
             "samrambakeralam.github.io",
             "script.google.com",
             "script.googleusercontent.com",
@@ -267,8 +268,16 @@ webView.webChromeClient = object : WebChromeClient() {
 
                     // Accept checkout requests only from our checkout page.
                     if (
-                        currentUri.host != "samrambakeralam.github.io" ||
-                        currentUri.path != "/TEXLearn/checkout.html"
+                    !(  
+                         (
+                          currentUri.host == "texlearn.in" &&
+                          currentUri.path == "/checkout.html"
+                        ) ||
+                        (
+                        currentUri.host == "samrambakeralam.github.io" &&
+                        currentUri.path == "/TEXLearn/checkout.html"
+                       )
+                    )
                     ) {
                         throw IllegalStateException(
                             "Native checkout is not allowed on this page."
@@ -430,13 +439,25 @@ override fun onPaymentError(
 private fun isTEXLearnAccessUrl(rawUrl: String): Boolean {
     return try {
         val uri = Uri.parse(rawUrl)
-        val path = uri.path
 
-        uri.scheme == "https" &&
-            uri.host == "samrambakeralam.github.io" &&
-            (path == "/TEXLearn" || path == "/TEXLearn/") &&
+        val validUrl =
+            uri.scheme == "https" &&
+            (
+                (
+                    uri.host == "texlearn.in" &&
+                    (uri.path.isNullOrEmpty() || uri.path == "/")
+                ) ||
+                (
+                    uri.host == "samrambakeralam.github.io" &&
+                    (uri.path == "/TEXLearn" ||
+                     uri.path == "/TEXLearn/")
+                )
+            )
+
+        validUrl &&
             !uri.getQueryParameter("cid").isNullOrBlank() &&
             !uri.getQueryParameter("t").isNullOrBlank()
+
     } catch (_: Exception) {
         false
     }
@@ -447,13 +468,25 @@ private fun isTEXLearnAccessUrl(rawUrl: String): Boolean {
 private fun isTEXLearnReferralUrl(rawUrl: String): Boolean {
     return try {
         val uri = Uri.parse(rawUrl)
-        val path = uri.path
         val partnerID = uri.getQueryParameter("ref") ?: ""
 
+        val validHost = uri.host in setOf(
+            "texlearn.in",
+            "samrambakeralam.github.io"
+        )
+
+        val validPath =
+            (uri.host == "texlearn.in" &&
+                (uri.path.isNullOrEmpty() || uri.path == "/")) ||
+            (uri.host == "samrambakeralam.github.io" &&
+                (uri.path == "/TEXLearn" ||
+                    uri.path == "/TEXLearn/"))
+
         uri.scheme == "https" &&
-            uri.host == "samrambakeralam.github.io" &&
-            (path == "/TEXLearn" || path == "/TEXLearn/") &&
+            validHost &&
+            validPath &&
             Regex("^TXL\\d+$").matches(partnerID)
+
     } catch (_: Exception) {
         false
     }
