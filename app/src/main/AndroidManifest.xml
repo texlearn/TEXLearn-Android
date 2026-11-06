@@ -48,7 +48,7 @@
     <data
         android:scheme="https"
         android:host="texlearn.in"
-        android:path="/" />
+        android:pathPrefix="/" />
 </intent-filter>           
 
            </activity>
