@@ -390,6 +390,11 @@ override fun onPaymentError(
 
     val data = paymentData.data
 
+    Log.e(
+    "TEXLearnPayment",
+    "FULL PAYMENT DATA: $data"
+)
+
 Log.e(
     "TEXLearnPayment",
     "Payment error details | " +
