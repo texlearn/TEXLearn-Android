@@ -31,6 +31,15 @@ import com.razorpay.Checkout
 import com.razorpay.PaymentData
 import com.razorpay.PaymentResultWithDataListener
 import org.json.JSONObject
+import android.security.keystore.KeyGenParameterSpec
+import android.security.keystore.KeyProperties
+import android.util.Base64
+import java.security.KeyStore
+import javax.crypto.Cipher
+import javax.crypto.KeyGenerator
+import javax.crypto.SecretKey
+import javax.crypto.spec.GCMParameterSpec
+
 
 class MainActivity : Activity(), PaymentResultWithDataListener {
 
@@ -55,6 +64,168 @@ class MainActivity : Activity(), PaymentResultWithDataListener {
             "razorpay.in",
             "rzp.io"
         )
+    }
+
+        // -------------------------------------------------
+    // ENCRYPTED NATIVE PAYMENT STORAGE
+    // -------------------------------------------------
+
+    private val PAYMENT_KEY_ALIAS =
+        "TEXLearnPendingPaymentKey"
+
+    private val PAYMENT_PREFS =
+        "texlearn_secure_payment"
+
+    private val PAYMENT_PREFS_KEY =
+        "encrypted_pending_payment"
+
+    private fun getPaymentSecretKey(): SecretKey {
+        val keyStore = KeyStore.getInstance("AndroidKeyStore")
+        keyStore.load(null)
+
+        val existingKey =
+            keyStore.getKey(PAYMENT_KEY_ALIAS, null) as? SecretKey
+
+        if (existingKey != null) {
+            return existingKey
+        }
+
+        val keyGenerator = KeyGenerator.getInstance(
+            KeyProperties.KEY_ALGORITHM_AES,
+            "AndroidKeyStore"
+        )
+
+        val keySpec = KeyGenParameterSpec.Builder(
+            PAYMENT_KEY_ALIAS,
+            KeyProperties.PURPOSE_ENCRYPT or
+                KeyProperties.PURPOSE_DECRYPT
+        )
+            .setBlockModes(KeyProperties.BLOCK_MODE_GCM)
+            .setEncryptionPaddings(
+                KeyProperties.ENCRYPTION_PADDING_NONE
+            )
+            .setRandomizedEncryptionRequired(true)
+            .build()
+
+        keyGenerator.init(keySpec)
+
+        return keyGenerator.generateKey()
+    }
+
+    @Synchronized
+    private fun saveEncryptedPendingPayment(
+        paymentJson: String
+    ): Boolean {
+        return try {
+            val payment = JSONObject(paymentJson)
+
+            val customerID = payment.optString("customerID")
+            val token = payment.optString("token")
+            val orderID = payment.optString("orderID")
+            val amount = payment.optInt("amount", 0)
+
+            if (
+                customerID.isBlank() ||
+                token.isBlank() ||
+                orderID.isBlank() ||
+                amount <= 0
+            ) {
+                return false
+            }
+
+            val cipher = Cipher.getInstance("AES/GCM/NoPadding")
+
+            cipher.init(
+                Cipher.ENCRYPT_MODE,
+                getPaymentSecretKey()
+            )
+
+            val encryptedData = cipher.doFinal(
+                paymentJson.toByteArray(Charsets.UTF_8)
+            )
+
+            val iv = cipher.iv
+            val combinedData = iv + encryptedData
+
+            val encodedData = Base64.encodeToString(
+                combinedData,
+                Base64.NO_WRAP
+            )
+
+            getSharedPreferences(
+                PAYMENT_PREFS,
+                Context.MODE_PRIVATE
+            )
+                .edit()
+                .putString(PAYMENT_PREFS_KEY, encodedData)
+                .commit()
+
+        } catch (error: Exception) {
+            Log.e(
+                "TEXLearnPayment",
+                "Unable to save encrypted payment state",
+                error
+            )
+            false
+        }
+    }
+
+    @Synchronized
+    private fun getEncryptedPendingPayment(): String {
+        return try {
+            val encodedData = getSharedPreferences(
+                PAYMENT_PREFS,
+                Context.MODE_PRIVATE
+            ).getString(PAYMENT_PREFS_KEY, null)
+                ?: return ""
+
+            val combinedData = Base64.decode(
+                encodedData,
+                Base64.NO_WRAP
+            )
+
+            if (combinedData.size <= 12) {
+                return ""
+            }
+
+            val iv = combinedData.copyOfRange(0, 12)
+            val encryptedData = combinedData.copyOfRange(
+                12,
+                combinedData.size
+            )
+
+            val cipher = Cipher.getInstance("AES/GCM/NoPadding")
+
+            cipher.init(
+                Cipher.DECRYPT_MODE,
+                getPaymentSecretKey(),
+                GCMParameterSpec(128, iv)
+            )
+
+            String(
+                cipher.doFinal(encryptedData),
+                Charsets.UTF_8
+            )
+
+        } catch (error: Exception) {
+            Log.e(
+                "TEXLearnPayment",
+                "Unable to retrieve encrypted payment state",
+                error
+            )
+            ""
+        }
+    }
+
+    @Synchronized
+    private fun clearEncryptedPendingPayment() {
+        getSharedPreferences(
+            PAYMENT_PREFS,
+            Context.MODE_PRIVATE
+        )
+            .edit()
+            .remove(PAYMENT_PREFS_KEY)
+            .commit()
     }
 
     @SuppressLint("SetJavaScriptEnabled")
