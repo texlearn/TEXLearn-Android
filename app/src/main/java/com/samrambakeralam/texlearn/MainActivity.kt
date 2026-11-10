@@ -530,6 +530,15 @@ override fun onPaymentSuccess(
         try {
             val data = paymentData.data
 
+            Log.i(
+    "TEXLearnPayment",
+    "Native payment success callback | " +
+        "time=${System.currentTimeMillis()} | " +
+        "hasOrderID=${data.has("razorpay_order_id")} | " +
+        "hasPaymentID=${data.has("razorpay_payment_id")} | " +
+        "hasSignature=${data.has("razorpay_signature")}"
+)
+
             val script =
                 """
                 (() => {
