@@ -388,6 +388,16 @@ override fun onPaymentError(
         "Native onPaymentError ENTERED | code=$code"
     )
 
+    val data = paymentData.data
+
+Log.e(
+    "TEXLearnPayment",
+    "Payment error details | " +
+        "orderID=${data.optString("razorpay_order_id")} | " +
+        "paymentID=${data.optString("razorpay_payment_id")} | " +
+        "response=$response"
+)
+
     runOnUiThread {
         val safeMessage = JSONObject.quote(
             response ?: "Payment was not completed."
