@@ -432,7 +432,7 @@ webView.webChromeClient = object : WebChromeClient() {
         }
     }
 
-    private inner class NativePaymentBridge {
+        private inner class NativePaymentBridge {
 
         @JavascriptInterface
         fun openCheckout(optionsJson: String) {
@@ -442,16 +442,16 @@ webView.webChromeClient = object : WebChromeClient() {
 
                     // Accept checkout requests only from our checkout page.
                     if (
-                    !(  
-                         (
-                          currentUri.host == "texlearn.in" &&
-                          currentUri.path == "/checkout.html"
-                        ) ||
-                        (
-                        currentUri.host == "samrambakeralam.github.io" &&
-                        currentUri.path == "/TEXLearn/checkout.html"
-                       )
-                    )
+                        !(
+                            (
+                                currentUri.host == "texlearn.in" &&
+                                currentUri.path == "/checkout.html"
+                            ) ||
+                            (
+                                currentUri.host == "samrambakeralam.github.io" &&
+                                currentUri.path == "/TEXLearn/checkout.html"
+                            )
+                        )
                     ) {
                         throw IllegalStateException(
                             "Native checkout is not allowed on this page."
@@ -487,6 +487,31 @@ webView.webChromeClient = object : WebChromeClient() {
                         error.message ?: "Unable to open native checkout."
                     )
                 }
+            }
+        }
+
+        @JavascriptInterface
+        fun savePendingPayment(paymentJson: String): Boolean {
+            return saveEncryptedPendingPayment(paymentJson)
+        }
+
+        @JavascriptInterface
+        fun getPendingPayment(): String {
+            return getEncryptedPendingPayment()
+        }
+
+        @JavascriptInterface
+        fun clearPendingPayment(): Boolean {
+            return try {
+                clearEncryptedPendingPayment()
+                true
+            } catch (error: Exception) {
+                Log.e(
+                    "TEXLearnPayment",
+                    "Unable to clear pending payment",
+                    error
+                )
+                false
             }
         }
     }
