@@ -584,19 +584,15 @@ override fun onPaymentError(
         "Native onPaymentError ENTERED | code=$code"
     )
 
-    val data = paymentData.data
-
-    Log.e(
-    "TEXLearnPayment",
-    "FULL PAYMENT DATA: $data"
-)
+ val data = paymentData.data
 
 Log.e(
     "TEXLearnPayment",
-    "Payment error details | " +
-        "orderID=${data.optString("razorpay_order_id")} | " +
-        "paymentID=${data.optString("razorpay_payment_id")} | " +
-        "response=$response"
+    "Native payment error callback | " +
+        "time=${System.currentTimeMillis()} | " +
+        "code=$code | " +
+        "hasOrderID=${data.has("razorpay_order_id")} | " +
+        "hasPaymentID=${data.has("razorpay_payment_id")}"
 )
 
     runOnUiThread {
