@@ -241,7 +241,6 @@ class MainActivity : Activity(), PaymentResultWithDataListener {
         }
 
         webView = WebView(this)
-
         WebView.setWebContentsDebuggingEnabled(true)
 
         progressBar = ProgressBar(
