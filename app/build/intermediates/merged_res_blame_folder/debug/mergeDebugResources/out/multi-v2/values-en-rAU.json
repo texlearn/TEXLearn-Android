@@ -1,0 +1,36 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.samrambakeralam.texlearn.app-mergeDebugResources-21:/values-en-rAU/values-en-rAU.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\pro\\.gradle\\caches\\8.9\\transforms\\4262ea96a2e686067147606d4e19b233\\transformed\\core-1.8.0\\res\\values-en-rAU\\values-en-rAU.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\pro\\.gradle\\caches\\8.9\\transforms\\00086afd919a3c0d3cb4ff0d36d08f97\\transformed\\play-services-wallet-18.1.3\\res\\values-en-rAU\\values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "206",
+                        "endColumns": "70",
+                        "endOffsets": "276"
+                    },
+                    "to": {
+                        "startLines": "3",
+                        "startColumns": "4",
+                        "startOffsets": "156",
+                        "endColumns": "74",
+                        "endOffsets": "226"
+                    }
+                }
+            ]
+        }
+    ]
+}

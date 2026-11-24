@@ -1,0 +1,389 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Users\pro\Documents\GitHub\TEXLearn-Android\app\src\main\AndroidManifest.xml:1:1-56:13
+INJECTED from C:\Users\pro\Documents\GitHub\TEXLearn-Android\app\src\main\AndroidManifest.xml:1:1-56:13
+INJECTED from C:\Users\pro\Documents\GitHub\TEXLearn-Android\app\src\main\AndroidManifest.xml:1:1-56:13
+INJECTED from C:\Users\pro\Documents\GitHub\TEXLearn-Android\app\src\main\AndroidManifest.xml:1:1-56:13
+MERGED from [androidx.core:core-splashscreen:1.0.1] C:\Users\pro\.gradle\caches\8.9\transforms\1707a0e8ca57aeebbefdd97740033573\transformed\core-splashscreen-1.0.1\AndroidManifest.xml:17:1-24:12
+MERGED from [com.razorpay:checkout:1.6.41] C:\Users\pro\.gradle\caches\8.9\transforms\0df7f754a1041dc86719752a2ffbc7b6\transformed\checkout-1.6.41\AndroidManifest.xml:2:1-7:12
+MERGED from [com.razorpay:standard-core:1.7.22] C:\Users\pro\.gradle\caches\8.9\transforms\b7a6aedaa6fe15db48ac2b82f65677db\transformed\standard-core-1.7.22\AndroidManifest.xml:2:1-73:12
+MERGED from [com.google.android.gms:play-services-auth:21.1.0] C:\Users\pro\.gradle\caches\8.9\transforms\415cf87f96ab6b31c97dd5b7164bbae1\transformed\play-services-auth-21.1.0\AndroidManifest.xml:17:1-40:12
+MERGED from [com.google.android.gms:play-services-wallet:18.1.3] C:\Users\pro\.gradle\caches\8.9\transforms\00086afd919a3c0d3cb4ff0d36d08f97\transformed\play-services-wallet-18.1.3\AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.gms:play-services-auth-api-phone:18.0.2] C:\Users\pro\.gradle\caches\8.9\transforms\de33cd3e7169607e17781d306af06306\transformed\play-services-auth-api-phone-18.0.2\AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.android.gms:play-services-auth-base:18.0.10] C:\Users\pro\.gradle\caches\8.9\transforms\cbbd60b8be80f7c202a848840b1205f9\transformed\play-services-auth-base-18.0.10\AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.android.gms:play-services-fido:20.0.1] C:\Users\pro\.gradle\caches\8.9\transforms\b3acf570bc97412dd197bef8b6d17407\transformed\play-services-fido-20.0.1\AndroidManifest.xml:2:1-10:12
+MERGED from [com.google.android.gms:play-services-identity:17.0.0] C:\Users\pro\.gradle\caches\8.9\transforms\35f48a39d7d3d46ad52eab9c08360991\transformed\play-services-identity-17.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\pro\.gradle\caches\8.9\transforms\df6ca28c4552f719282254e9595c8b2d\transformed\play-services-maps-17.0.0\AndroidManifest.xml:17:1-38:12
+MERGED from [com.google.android.gms:play-services-base:18.3.0] C:\Users\pro\.gradle\caches\8.9\transforms\826e8a996a29f984bde5355a9b8b6428\transformed\play-services-base-18.3.0\AndroidManifest.xml:16:1-24:12
+MERGED from [com.google.android.gms:play-services-tasks:18.1.0] C:\Users\pro\.gradle\caches\8.9\transforms\f722a56158da658e0bf4b60dc8f6066d\transformed\play-services-tasks-18.1.0\AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.android.gms:play-services-basement:18.3.0] C:\Users\pro\.gradle\caches\8.9\transforms\93a8b81d39f91947f6c46d71aa34b0d5\transformed\play-services-basement-18.3.0\AndroidManifest.xml:16:1-26:12
+MERGED from [androidx.fragment:fragment:1.5.7] C:\Users\pro\.gradle\caches\8.9\transforms\85148eb4f0b12ffca339e0bfee6c8173\transformed\fragment-1.5.7\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.activity:activity:1.5.1] C:\Users\pro\.gradle\caches\8.9\transforms\e5a24d58349fb53a51f40df481a4b1c9\transformed\activity-1.5.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.loader:loader:1.1.0] C:\Users\pro\.gradle\caches\8.9\transforms\2ea5476b4274f7aac1b211b86cfea5a3\transformed\loader-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.5.1] C:\Users\pro\.gradle\caches\8.9\transforms\66ca1192ecfec1801b8bc3858a11e8e8\transformed\lifecycle-viewmodel-2.5.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.5.1] C:\Users\pro\.gradle\caches\8.9\transforms\5601d8f7c7d6188cea939f13edf34b8b\transformed\lifecycle-viewmodel-savedstate-2.5.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.webkit:webkit:1.15.0] C:\Users\pro\.gradle\caches\8.9\transforms\fe95db7371843ac4e8637ec78cea144d\transformed\webkit-1.15.0\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.core:core-ktx:1.2.0] C:\Users\pro\.gradle\caches\8.9\transforms\911e6ebb4e71e79b53752e126d46abfb\transformed\core-ktx-1.2.0\AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\pro\.gradle\caches\8.9\transforms\d869928ef0533cdb1dddd01fbe9f63d0\transformed\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\pro\.gradle\caches\8.9\transforms\bf9a7a03f595050e551cf5379bdf7313\transformed\customview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.8.0] C:\Users\pro\.gradle\caches\8.9\transforms\4262ea96a2e686067147606d4e19b233\transformed\core-1.8.0\AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.annotation:annotation-experimental:1.3.0] C:\Users\pro\.gradle\caches\8.9\transforms\455240c3cead1041044c67f9a4021fc1\transformed\annotation-experimental-1.3.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\pro\.gradle\caches\8.9\transforms\0594a7b5efe8705a5993a84776341842\transformed\startup-runtime-1.1.1\AndroidManifest.xml:17:1-33:12
+MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\pro\.gradle\caches\8.9\transforms\ba1e9e6b44e6c67b08878a2c42ea8a9a\transformed\tracing-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\pro\.gradle\caches\8.9\transforms\93a3136e36d10516c266845ae3661135\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.savedstate:savedstate:1.2.0] C:\Users\pro\.gradle\caches\8.9\transforms\bdcaa091ce8d4a072774fba7f5502200\transformed\savedstate-1.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.5.1] C:\Users\pro\.gradle\caches\8.9\transforms\93e5534d5033bf2c65992e2440f8390c\transformed\lifecycle-runtime-2.5.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.5.1] C:\Users\pro\.gradle\caches\8.9\transforms\8c9370ddc9d9ecc49d6c18ed404e7366\transformed\lifecycle-livedata-core-2.5.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\pro\.gradle\caches\8.9\transforms\d988cf63275e176ab3c3b8fefa8b6bd9\transformed\core-runtime-2.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [com.razorpay:core:1.0.22] C:\Users\pro\.gradle\caches\8.9\transforms\3522ffcb280d0a9a43824679116974e3\transformed\core-1.0.22\AndroidManifest.xml:2:1-56:12
+	package
+		INJECTED from C:\Users\pro\Documents\GitHub\TEXLearn-Android\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from C:\Users\pro\Documents\GitHub\TEXLearn-Android\app\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from C:\Users\pro\Documents\GitHub\TEXLearn-Android\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\pro\Documents\GitHub\TEXLearn-Android\app\src\main\AndroidManifest.xml:1:11-69
+queries
+ADDED from C:\Users\pro\Documents\GitHub\TEXLearn-Android\app\src\main\AndroidManifest.xml:3:5-8:15
+MERGED from [com.razorpay:standard-core:1.7.22] C:\Users\pro\.gradle\caches\8.9\transforms\b7a6aedaa6fe15db48ac2b82f65677db\transformed\standard-core-1.7.22\AndroidManifest.xml:15:5-41:15
+MERGED from [com.razorpay:standard-core:1.7.22] C:\Users\pro\.gradle\caches\8.9\transforms\b7a6aedaa6fe15db48ac2b82f65677db\transformed\standard-core-1.7.22\AndroidManifest.xml:15:5-41:15
+MERGED from [com.razorpay:core:1.0.22] C:\Users\pro\.gradle\caches\8.9\transforms\3522ffcb280d0a9a43824679116974e3\transformed\core-1.0.22\AndroidManifest.xml:16:5-32:15
+MERGED from [com.razorpay:core:1.0.22] C:\Users\pro\.gradle\caches\8.9\transforms\3522ffcb280d0a9a43824679116974e3\transformed\core-1.0.22\AndroidManifest.xml:16:5-32:15
+package#com.google.android.apps.nbu.paisa.user
+ADDED from C:\Users\pro\Documents\GitHub\TEXLearn-Android\app\src\main\AndroidManifest.xml:4:9-74
+	android:name
+		ADDED from C:\Users\pro\Documents\GitHub\TEXLearn-Android\app\src\main\AndroidManifest.xml:4:18-71
+package#com.phonepe.app
+ADDED from C:\Users\pro\Documents\GitHub\TEXLearn-Android\app\src\main\AndroidManifest.xml:5:9-51
+	android:name
+		ADDED from C:\Users\pro\Documents\GitHub\TEXLearn-Android\app\src\main\AndroidManifest.xml:5:18-48
+package#net.one97.paytm
+ADDED from C:\Users\pro\Documents\GitHub\TEXLearn-Android\app\src\main\AndroidManifest.xml:6:9-51
+	android:name
+		ADDED from C:\Users\pro\Documents\GitHub\TEXLearn-Android\app\src\main\AndroidManifest.xml:6:18-48
+package#in.org.npci.upiapp
+ADDED from C:\Users\pro\Documents\GitHub\TEXLearn-Android\app\src\main\AndroidManifest.xml:7:9-54
+	android:name
+		ADDED from C:\Users\pro\Documents\GitHub\TEXLearn-Android\app\src\main\AndroidManifest.xml:7:18-51
+uses-permission#android.permission.INTERNET
+ADDED from C:\Users\pro\Documents\GitHub\TEXLearn-Android\app\src\main\AndroidManifest.xml:10:5-67
+MERGED from [com.razorpay:standard-core:1.7.22] C:\Users\pro\.gradle\caches\8.9\transforms\b7a6aedaa6fe15db48ac2b82f65677db\transformed\standard-core-1.7.22\AndroidManifest.xml:8:5-67
+MERGED from [com.razorpay:standard-core:1.7.22] C:\Users\pro\.gradle\caches\8.9\transforms\b7a6aedaa6fe15db48ac2b82f65677db\transformed\standard-core-1.7.22\AndroidManifest.xml:8:5-67
+MERGED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\pro\.gradle\caches\8.9\transforms\df6ca28c4552f719282254e9595c8b2d\transformed\play-services-maps-17.0.0\AndroidManifest.xml:24:5-67
+MERGED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\pro\.gradle\caches\8.9\transforms\df6ca28c4552f719282254e9595c8b2d\transformed\play-services-maps-17.0.0\AndroidManifest.xml:24:5-67
+MERGED from [com.razorpay:core:1.0.22] C:\Users\pro\.gradle\caches\8.9\transforms\3522ffcb280d0a9a43824679116974e3\transformed\core-1.0.22\AndroidManifest.xml:7:5-67
+MERGED from [com.razorpay:core:1.0.22] C:\Users\pro\.gradle\caches\8.9\transforms\3522ffcb280d0a9a43824679116974e3\transformed\core-1.0.22\AndroidManifest.xml:7:5-67
+	android:name
+		ADDED from C:\Users\pro\Documents\GitHub\TEXLearn-Android\app\src\main\AndroidManifest.xml:10:22-64
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from C:\Users\pro\Documents\GitHub\TEXLearn-Android\app\src\main\AndroidManifest.xml:11:5-79
+MERGED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\pro\.gradle\caches\8.9\transforms\df6ca28c4552f719282254e9595c8b2d\transformed\play-services-maps-17.0.0\AndroidManifest.xml:23:5-79
+MERGED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\pro\.gradle\caches\8.9\transforms\df6ca28c4552f719282254e9595c8b2d\transformed\play-services-maps-17.0.0\AndroidManifest.xml:23:5-79
+MERGED from [com.razorpay:core:1.0.22] C:\Users\pro\.gradle\caches\8.9\transforms\3522ffcb280d0a9a43824679116974e3\transformed\core-1.0.22\AndroidManifest.xml:8:5-79
+MERGED from [com.razorpay:core:1.0.22] C:\Users\pro\.gradle\caches\8.9\transforms\3522ffcb280d0a9a43824679116974e3\transformed\core-1.0.22\AndroidManifest.xml:8:5-79
+	android:name
+		ADDED from C:\Users\pro\Documents\GitHub\TEXLearn-Android\app\src\main\AndroidManifest.xml:11:22-76
+application
+ADDED from C:\Users\pro\Documents\GitHub\TEXLearn-Android\app\src\main\AndroidManifest.xml:13:5-55:20
+INJECTED from C:\Users\pro\Documents\GitHub\TEXLearn-Android\app\src\main\AndroidManifest.xml:13:5-55:20
+MERGED from [com.razorpay:standard-core:1.7.22] C:\Users\pro\.gradle\caches\8.9\transforms\b7a6aedaa6fe15db48ac2b82f65677db\transformed\standard-core-1.7.22\AndroidManifest.xml:43:5-71:19
+MERGED from [com.razorpay:standard-core:1.7.22] C:\Users\pro\.gradle\caches\8.9\transforms\b7a6aedaa6fe15db48ac2b82f65677db\transformed\standard-core-1.7.22\AndroidManifest.xml:43:5-71:19
+MERGED from [com.google.android.gms:play-services-auth:21.1.0] C:\Users\pro\.gradle\caches\8.9\transforms\415cf87f96ab6b31c97dd5b7164bbae1\transformed\play-services-auth-21.1.0\AndroidManifest.xml:22:5-38:19
+MERGED from [com.google.android.gms:play-services-auth:21.1.0] C:\Users\pro\.gradle\caches\8.9\transforms\415cf87f96ab6b31c97dd5b7164bbae1\transformed\play-services-auth-21.1.0\AndroidManifest.xml:22:5-38:19
+MERGED from [com.google.android.gms:play-services-fido:20.0.1] C:\Users\pro\.gradle\caches\8.9\transforms\b3acf570bc97412dd197bef8b6d17407\transformed\play-services-fido-20.0.1\AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.android.gms:play-services-fido:20.0.1] C:\Users\pro\.gradle\caches\8.9\transforms\b3acf570bc97412dd197bef8b6d17407\transformed\play-services-fido-20.0.1\AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.android.gms:play-services-identity:17.0.0] C:\Users\pro\.gradle\caches\8.9\transforms\35f48a39d7d3d46ad52eab9c08360991\transformed\play-services-identity-17.0.0\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-identity:17.0.0] C:\Users\pro\.gradle\caches\8.9\transforms\35f48a39d7d3d46ad52eab9c08360991\transformed\play-services-identity-17.0.0\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\pro\.gradle\caches\8.9\transforms\df6ca28c4552f719282254e9595c8b2d\transformed\play-services-maps-17.0.0\AndroidManifest.xml:30:5-36:19
+MERGED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\pro\.gradle\caches\8.9\transforms\df6ca28c4552f719282254e9595c8b2d\transformed\play-services-maps-17.0.0\AndroidManifest.xml:30:5-36:19
+MERGED from [com.google.android.gms:play-services-base:18.3.0] C:\Users\pro\.gradle\caches\8.9\transforms\826e8a996a29f984bde5355a9b8b6428\transformed\play-services-base-18.3.0\AndroidManifest.xml:19:5-23:19
+MERGED from [com.google.android.gms:play-services-base:18.3.0] C:\Users\pro\.gradle\caches\8.9\transforms\826e8a996a29f984bde5355a9b8b6428\transformed\play-services-base-18.3.0\AndroidManifest.xml:19:5-23:19
+MERGED from [com.google.android.gms:play-services-tasks:18.1.0] C:\Users\pro\.gradle\caches\8.9\transforms\f722a56158da658e0bf4b60dc8f6066d\transformed\play-services-tasks-18.1.0\AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-tasks:18.1.0] C:\Users\pro\.gradle\caches\8.9\transforms\f722a56158da658e0bf4b60dc8f6066d\transformed\play-services-tasks-18.1.0\AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-basement:18.3.0] C:\Users\pro\.gradle\caches\8.9\transforms\93a8b81d39f91947f6c46d71aa34b0d5\transformed\play-services-basement-18.3.0\AndroidManifest.xml:20:5-24:19
+MERGED from [com.google.android.gms:play-services-basement:18.3.0] C:\Users\pro\.gradle\caches\8.9\transforms\93a8b81d39f91947f6c46d71aa34b0d5\transformed\play-services-basement-18.3.0\AndroidManifest.xml:20:5-24:19
+MERGED from [androidx.core:core:1.8.0] C:\Users\pro\.gradle\caches\8.9\transforms\4262ea96a2e686067147606d4e19b233\transformed\core-1.8.0\AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.8.0] C:\Users\pro\.gradle\caches\8.9\transforms\4262ea96a2e686067147606d4e19b233\transformed\core-1.8.0\AndroidManifest.xml:24:5-89
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\pro\.gradle\caches\8.9\transforms\0594a7b5efe8705a5993a84776341842\transformed\startup-runtime-1.1.1\AndroidManifest.xml:25:5-31:19
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\pro\.gradle\caches\8.9\transforms\0594a7b5efe8705a5993a84776341842\transformed\startup-runtime-1.1.1\AndroidManifest.xml:25:5-31:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\pro\.gradle\caches\8.9\transforms\93a3136e36d10516c266845ae3661135\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\pro\.gradle\caches\8.9\transforms\93a3136e36d10516c266845ae3661135\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
+MERGED from [com.razorpay:core:1.0.22] C:\Users\pro\.gradle\caches\8.9\transforms\3522ffcb280d0a9a43824679116974e3\transformed\core-1.0.22\AndroidManifest.xml:34:5-54:19
+MERGED from [com.razorpay:core:1.0.22] C:\Users\pro\.gradle\caches\8.9\transforms\3522ffcb280d0a9a43824679116974e3\transformed\core-1.0.22\AndroidManifest.xml:34:5-54:19
+	android:extractNativeLibs
+		INJECTED from C:\Users\pro\Documents\GitHub\TEXLearn-Android\app\src\main\AndroidManifest.xml
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.8.0] C:\Users\pro\.gradle\caches\8.9\transforms\4262ea96a2e686067147606d4e19b233\transformed\core-1.8.0\AndroidManifest.xml:24:18-86
+	android:supportsRtl
+		ADDED from C:\Users\pro\Documents\GitHub\TEXLearn-Android\app\src\main\AndroidManifest.xml:19:9-35
+	android:label
+		ADDED from C:\Users\pro\Documents\GitHub\TEXLearn-Android\app\src\main\AndroidManifest.xml:16:9-33
+	android:roundIcon
+		ADDED from C:\Users\pro\Documents\GitHub\TEXLearn-Android\app\src\main\AndroidManifest.xml:18:9-54
+	android:icon
+		ADDED from C:\Users\pro\Documents\GitHub\TEXLearn-Android\app\src\main\AndroidManifest.xml:17:9-43
+	android:allowBackup
+		ADDED from C:\Users\pro\Documents\GitHub\TEXLearn-Android\app\src\main\AndroidManifest.xml:14:9-36
+	android:theme
+		ADDED from C:\Users\pro\Documents\GitHub\TEXLearn-Android\app\src\main\AndroidManifest.xml:20:9-53
+	android:usesCleartextTraffic
+		ADDED from C:\Users\pro\Documents\GitHub\TEXLearn-Android\app\src\main\AndroidManifest.xml:15:9-45
+activity#com.samrambakeralam.texlearn.MainActivity
+ADDED from C:\Users\pro\Documents\GitHub\TEXLearn-Android\app\src\main\AndroidManifest.xml:21:9-54:23
+	android:launchMode
+		ADDED from C:\Users\pro\Documents\GitHub\TEXLearn-Android\app\src\main\AndroidManifest.xml:25:13-43
+	android:exported
+		ADDED from C:\Users\pro\Documents\GitHub\TEXLearn-Android\app\src\main\AndroidManifest.xml:24:13-36
+	android:configChanges
+		ADDED from C:\Users\pro\Documents\GitHub\TEXLearn-Android\app\src\main\AndroidManifest.xml:23:13-74
+	android:name
+		ADDED from C:\Users\pro\Documents\GitHub\TEXLearn-Android\app\src\main\AndroidManifest.xml:22:13-41
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from C:\Users\pro\Documents\GitHub\TEXLearn-Android\app\src\main\AndroidManifest.xml:26:13-29:29
+action#android.intent.action.MAIN
+ADDED from C:\Users\pro\Documents\GitHub\TEXLearn-Android\app\src\main\AndroidManifest.xml:27:17-69
+	android:name
+		ADDED from C:\Users\pro\Documents\GitHub\TEXLearn-Android\app\src\main\AndroidManifest.xml:27:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\pro\Documents\GitHub\TEXLearn-Android\app\src\main\AndroidManifest.xml:28:17-77
+	android:name
+		ADDED from C:\Users\pro\Documents\GitHub\TEXLearn-Android\app\src\main\AndroidManifest.xml:28:27-74
+intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:host:samrambakeralam.github.io+data:pathPrefix:/TEXLearn+data:scheme:https
+ADDED from C:\Users\pro\Documents\GitHub\TEXLearn-Android\app\src\main\AndroidManifest.xml:31:1-41:17
+	android:autoVerify
+		ADDED from C:\Users\pro\Documents\GitHub\TEXLearn-Android\app\src\main\AndroidManifest.xml:31:16-41
+action#android.intent.action.VIEW
+ADDED from C:\Users\pro\Documents\GitHub\TEXLearn-Android\app\src\main\AndroidManifest.xml:32:5-57
+	android:name
+		ADDED from C:\Users\pro\Documents\GitHub\TEXLearn-Android\app\src\main\AndroidManifest.xml:32:13-54
+category#android.intent.category.DEFAULT
+ADDED from C:\Users\pro\Documents\GitHub\TEXLearn-Android\app\src\main\AndroidManifest.xml:34:5-64
+	android:name
+		ADDED from C:\Users\pro\Documents\GitHub\TEXLearn-Android\app\src\main\AndroidManifest.xml:34:15-61
+category#android.intent.category.BROWSABLE
+ADDED from C:\Users\pro\Documents\GitHub\TEXLearn-Android\app\src\main\AndroidManifest.xml:35:5-66
+	android:name
+		ADDED from C:\Users\pro\Documents\GitHub\TEXLearn-Android\app\src\main\AndroidManifest.xml:35:15-63
+data
+ADDED from C:\Users\pro\Documents\GitHub\TEXLearn-Android\app\src\main\AndroidManifest.xml:37:5-40:42
+	android:host
+		ADDED from C:\Users\pro\Documents\GitHub\TEXLearn-Android\app\src\main\AndroidManifest.xml:39:9-49
+	android:scheme
+		ADDED from C:\Users\pro\Documents\GitHub\TEXLearn-Android\app\src\main\AndroidManifest.xml:38:9-31
+	android:pathPrefix
+		ADDED from C:\Users\pro\Documents\GitHub\TEXLearn-Android\app\src\main\AndroidManifest.xml:40:9-39
+intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:host:texlearn.in+data:pathPrefix:/+data:scheme:https
+ADDED from C:\Users\pro\Documents\GitHub\TEXLearn-Android\app\src\main\AndroidManifest.xml:42:1-52:17
+	android:autoVerify
+		ADDED from C:\Users\pro\Documents\GitHub\TEXLearn-Android\app\src\main\AndroidManifest.xml:42:16-41
+uses-sdk
+INJECTED from C:\Users\pro\Documents\GitHub\TEXLearn-Android\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\pro\Documents\GitHub\TEXLearn-Android\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\pro\Documents\GitHub\TEXLearn-Android\app\src\main\AndroidManifest.xml
+MERGED from [androidx.core:core-splashscreen:1.0.1] C:\Users\pro\.gradle\caches\8.9\transforms\1707a0e8ca57aeebbefdd97740033573\transformed\core-splashscreen-1.0.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core-splashscreen:1.0.1] C:\Users\pro\.gradle\caches\8.9\transforms\1707a0e8ca57aeebbefdd97740033573\transformed\core-splashscreen-1.0.1\AndroidManifest.xml:20:5-22:41
+MERGED from [com.razorpay:checkout:1.6.41] C:\Users\pro\.gradle\caches\8.9\transforms\0df7f754a1041dc86719752a2ffbc7b6\transformed\checkout-1.6.41\AndroidManifest.xml:5:5-44
+MERGED from [com.razorpay:checkout:1.6.41] C:\Users\pro\.gradle\caches\8.9\transforms\0df7f754a1041dc86719752a2ffbc7b6\transformed\checkout-1.6.41\AndroidManifest.xml:5:5-44
+MERGED from [com.razorpay:standard-core:1.7.22] C:\Users\pro\.gradle\caches\8.9\transforms\b7a6aedaa6fe15db48ac2b82f65677db\transformed\standard-core-1.7.22\AndroidManifest.xml:6:5-44
+MERGED from [com.razorpay:standard-core:1.7.22] C:\Users\pro\.gradle\caches\8.9\transforms\b7a6aedaa6fe15db48ac2b82f65677db\transformed\standard-core-1.7.22\AndroidManifest.xml:6:5-44
+MERGED from [com.google.android.gms:play-services-auth:21.1.0] C:\Users\pro\.gradle\caches\8.9\transforms\415cf87f96ab6b31c97dd5b7164bbae1\transformed\play-services-auth-21.1.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-auth:21.1.0] C:\Users\pro\.gradle\caches\8.9\transforms\415cf87f96ab6b31c97dd5b7164bbae1\transformed\play-services-auth-21.1.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-wallet:18.1.3] C:\Users\pro\.gradle\caches\8.9\transforms\00086afd919a3c0d3cb4ff0d36d08f97\transformed\play-services-wallet-18.1.3\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-wallet:18.1.3] C:\Users\pro\.gradle\caches\8.9\transforms\00086afd919a3c0d3cb4ff0d36d08f97\transformed\play-services-wallet-18.1.3\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-auth-api-phone:18.0.2] C:\Users\pro\.gradle\caches\8.9\transforms\de33cd3e7169607e17781d306af06306\transformed\play-services-auth-api-phone-18.0.2\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-auth-api-phone:18.0.2] C:\Users\pro\.gradle\caches\8.9\transforms\de33cd3e7169607e17781d306af06306\transformed\play-services-auth-api-phone-18.0.2\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-auth-base:18.0.10] C:\Users\pro\.gradle\caches\8.9\transforms\cbbd60b8be80f7c202a848840b1205f9\transformed\play-services-auth-base-18.0.10\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-auth-base:18.0.10] C:\Users\pro\.gradle\caches\8.9\transforms\cbbd60b8be80f7c202a848840b1205f9\transformed\play-services-auth-base-18.0.10\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-fido:20.0.1] C:\Users\pro\.gradle\caches\8.9\transforms\b3acf570bc97412dd197bef8b6d17407\transformed\play-services-fido-20.0.1\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-fido:20.0.1] C:\Users\pro\.gradle\caches\8.9\transforms\b3acf570bc97412dd197bef8b6d17407\transformed\play-services-fido-20.0.1\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-identity:17.0.0] C:\Users\pro\.gradle\caches\8.9\transforms\35f48a39d7d3d46ad52eab9c08360991\transformed\play-services-identity-17.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-identity:17.0.0] C:\Users\pro\.gradle\caches\8.9\transforms\35f48a39d7d3d46ad52eab9c08360991\transformed\play-services-identity-17.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\pro\.gradle\caches\8.9\transforms\df6ca28c4552f719282254e9595c8b2d\transformed\play-services-maps-17.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\pro\.gradle\caches\8.9\transforms\df6ca28c4552f719282254e9595c8b2d\transformed\play-services-maps-17.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:18.3.0] C:\Users\pro\.gradle\caches\8.9\transforms\826e8a996a29f984bde5355a9b8b6428\transformed\play-services-base-18.3.0\AndroidManifest.xml:18:5-43
+MERGED from [com.google.android.gms:play-services-base:18.3.0] C:\Users\pro\.gradle\caches\8.9\transforms\826e8a996a29f984bde5355a9b8b6428\transformed\play-services-base-18.3.0\AndroidManifest.xml:18:5-43
+MERGED from [com.google.android.gms:play-services-tasks:18.1.0] C:\Users\pro\.gradle\caches\8.9\transforms\f722a56158da658e0bf4b60dc8f6066d\transformed\play-services-tasks-18.1.0\AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-tasks:18.1.0] C:\Users\pro\.gradle\caches\8.9\transforms\f722a56158da658e0bf4b60dc8f6066d\transformed\play-services-tasks-18.1.0\AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-basement:18.3.0] C:\Users\pro\.gradle\caches\8.9\transforms\93a8b81d39f91947f6c46d71aa34b0d5\transformed\play-services-basement-18.3.0\AndroidManifest.xml:18:5-43
+MERGED from [com.google.android.gms:play-services-basement:18.3.0] C:\Users\pro\.gradle\caches\8.9\transforms\93a8b81d39f91947f6c46d71aa34b0d5\transformed\play-services-basement-18.3.0\AndroidManifest.xml:18:5-43
+MERGED from [androidx.fragment:fragment:1.5.7] C:\Users\pro\.gradle\caches\8.9\transforms\85148eb4f0b12ffca339e0bfee6c8173\transformed\fragment-1.5.7\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.5.7] C:\Users\pro\.gradle\caches\8.9\transforms\85148eb4f0b12ffca339e0bfee6c8173\transformed\fragment-1.5.7\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.5.1] C:\Users\pro\.gradle\caches\8.9\transforms\e5a24d58349fb53a51f40df481a4b1c9\transformed\activity-1.5.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.5.1] C:\Users\pro\.gradle\caches\8.9\transforms\e5a24d58349fb53a51f40df481a4b1c9\transformed\activity-1.5.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.loader:loader:1.1.0] C:\Users\pro\.gradle\caches\8.9\transforms\2ea5476b4274f7aac1b211b86cfea5a3\transformed\loader-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.loader:loader:1.1.0] C:\Users\pro\.gradle\caches\8.9\transforms\2ea5476b4274f7aac1b211b86cfea5a3\transformed\loader-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.5.1] C:\Users\pro\.gradle\caches\8.9\transforms\66ca1192ecfec1801b8bc3858a11e8e8\transformed\lifecycle-viewmodel-2.5.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.5.1] C:\Users\pro\.gradle\caches\8.9\transforms\66ca1192ecfec1801b8bc3858a11e8e8\transformed\lifecycle-viewmodel-2.5.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.5.1] C:\Users\pro\.gradle\caches\8.9\transforms\5601d8f7c7d6188cea939f13edf34b8b\transformed\lifecycle-viewmodel-savedstate-2.5.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.5.1] C:\Users\pro\.gradle\caches\8.9\transforms\5601d8f7c7d6188cea939f13edf34b8b\transformed\lifecycle-viewmodel-savedstate-2.5.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.webkit:webkit:1.15.0] C:\Users\pro\.gradle\caches\8.9\transforms\fe95db7371843ac4e8637ec78cea144d\transformed\webkit-1.15.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.webkit:webkit:1.15.0] C:\Users\pro\.gradle\caches\8.9\transforms\fe95db7371843ac4e8637ec78cea144d\transformed\webkit-1.15.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.core:core-ktx:1.2.0] C:\Users\pro\.gradle\caches\8.9\transforms\911e6ebb4e71e79b53752e126d46abfb\transformed\core-ktx-1.2.0\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.core:core-ktx:1.2.0] C:\Users\pro\.gradle\caches\8.9\transforms\911e6ebb4e71e79b53752e126d46abfb\transformed\core-ktx-1.2.0\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\pro\.gradle\caches\8.9\transforms\d869928ef0533cdb1dddd01fbe9f63d0\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\pro\.gradle\caches\8.9\transforms\d869928ef0533cdb1dddd01fbe9f63d0\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\pro\.gradle\caches\8.9\transforms\bf9a7a03f595050e551cf5379bdf7313\transformed\customview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\pro\.gradle\caches\8.9\transforms\bf9a7a03f595050e551cf5379bdf7313\transformed\customview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.8.0] C:\Users\pro\.gradle\caches\8.9\transforms\4262ea96a2e686067147606d4e19b233\transformed\core-1.8.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.8.0] C:\Users\pro\.gradle\caches\8.9\transforms\4262ea96a2e686067147606d4e19b233\transformed\core-1.8.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.annotation:annotation-experimental:1.3.0] C:\Users\pro\.gradle\caches\8.9\transforms\455240c3cead1041044c67f9a4021fc1\transformed\annotation-experimental-1.3.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.3.0] C:\Users\pro\.gradle\caches\8.9\transforms\455240c3cead1041044c67f9a4021fc1\transformed\annotation-experimental-1.3.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\pro\.gradle\caches\8.9\transforms\0594a7b5efe8705a5993a84776341842\transformed\startup-runtime-1.1.1\AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\pro\.gradle\caches\8.9\transforms\0594a7b5efe8705a5993a84776341842\transformed\startup-runtime-1.1.1\AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\pro\.gradle\caches\8.9\transforms\ba1e9e6b44e6c67b08878a2c42ea8a9a\transformed\tracing-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\pro\.gradle\caches\8.9\transforms\ba1e9e6b44e6c67b08878a2c42ea8a9a\transformed\tracing-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\pro\.gradle\caches\8.9\transforms\93a3136e36d10516c266845ae3661135\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\pro\.gradle\caches\8.9\transforms\93a3136e36d10516c266845ae3661135\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.2.0] C:\Users\pro\.gradle\caches\8.9\transforms\bdcaa091ce8d4a072774fba7f5502200\transformed\savedstate-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.2.0] C:\Users\pro\.gradle\caches\8.9\transforms\bdcaa091ce8d4a072774fba7f5502200\transformed\savedstate-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.5.1] C:\Users\pro\.gradle\caches\8.9\transforms\93e5534d5033bf2c65992e2440f8390c\transformed\lifecycle-runtime-2.5.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.5.1] C:\Users\pro\.gradle\caches\8.9\transforms\93e5534d5033bf2c65992e2440f8390c\transformed\lifecycle-runtime-2.5.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.5.1] C:\Users\pro\.gradle\caches\8.9\transforms\8c9370ddc9d9ecc49d6c18ed404e7366\transformed\lifecycle-livedata-core-2.5.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.5.1] C:\Users\pro\.gradle\caches\8.9\transforms\8c9370ddc9d9ecc49d6c18ed404e7366\transformed\lifecycle-livedata-core-2.5.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\pro\.gradle\caches\8.9\transforms\d988cf63275e176ab3c3b8fefa8b6bd9\transformed\core-runtime-2.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\pro\.gradle\caches\8.9\transforms\d988cf63275e176ab3c3b8fefa8b6bd9\transformed\core-runtime-2.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [com.razorpay:core:1.0.22] C:\Users\pro\.gradle\caches\8.9\transforms\3522ffcb280d0a9a43824679116974e3\transformed\core-1.0.22\AndroidManifest.xml:5:5-44
+MERGED from [com.razorpay:core:1.0.22] C:\Users\pro\.gradle\caches\8.9\transforms\3522ffcb280d0a9a43824679116974e3\transformed\core-1.0.22\AndroidManifest.xml:5:5-44
+	android:targetSdkVersion
+		INJECTED from C:\Users\pro\Documents\GitHub\TEXLearn-Android\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Users\pro\Documents\GitHub\TEXLearn-Android\app\src\main\AndroidManifest.xml
+uses-permission#android.permission.NFC
+ADDED from [com.razorpay:standard-core:1.7.22] C:\Users\pro\.gradle\caches\8.9\transforms\b7a6aedaa6fe15db48ac2b82f65677db\transformed\standard-core-1.7.22\AndroidManifest.xml:9:5-62
+	android:name
+		ADDED from [com.razorpay:standard-core:1.7.22] C:\Users\pro\.gradle\caches\8.9\transforms\b7a6aedaa6fe15db48ac2b82f65677db\transformed\standard-core-1.7.22\AndroidManifest.xml:9:22-59
+uses-feature#android.hardware.nfc
+ADDED from [com.razorpay:standard-core:1.7.22] C:\Users\pro\.gradle\caches\8.9\transforms\b7a6aedaa6fe15db48ac2b82f65677db\transformed\standard-core-1.7.22\AndroidManifest.xml:11:5-13:36
+	android:required
+		ADDED from [com.razorpay:standard-core:1.7.22] C:\Users\pro\.gradle\caches\8.9\transforms\b7a6aedaa6fe15db48ac2b82f65677db\transformed\standard-core-1.7.22\AndroidManifest.xml:13:9-33
+	android:name
+		ADDED from [com.razorpay:standard-core:1.7.22] C:\Users\pro\.gradle\caches\8.9\transforms\b7a6aedaa6fe15db48ac2b82f65677db\transformed\standard-core-1.7.22\AndroidManifest.xml:12:9-44
+intent#action:name:android.intent.action.VIEW+data:mimeType:*/*+data:scheme:*
+ADDED from [com.razorpay:standard-core:1.7.22] C:\Users\pro\.gradle\caches\8.9\transforms\b7a6aedaa6fe15db48ac2b82f65677db\transformed\standard-core-1.7.22\AndroidManifest.xml:16:9-22:18
+intent#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+data:host:pay+data:mimeType:*/*+data:scheme:upi
+ADDED from [com.razorpay:standard-core:1.7.22] C:\Users\pro\.gradle\caches\8.9\transforms\b7a6aedaa6fe15db48ac2b82f65677db\transformed\standard-core-1.7.22\AndroidManifest.xml:23:9-32:18
+intent#action:name:android.intent.action.MAIN
+ADDED from [com.razorpay:standard-core:1.7.22] C:\Users\pro\.gradle\caches\8.9\transforms\b7a6aedaa6fe15db48ac2b82f65677db\transformed\standard-core-1.7.22\AndroidManifest.xml:33:9-35:18
+intent#action:name:android.intent.action.SEND+data:mimeType:*/*
+ADDED from [com.razorpay:standard-core:1.7.22] C:\Users\pro\.gradle\caches\8.9\transforms\b7a6aedaa6fe15db48ac2b82f65677db\transformed\standard-core-1.7.22\AndroidManifest.xml:36:9-40:18
+action#android.intent.action.SEND
+ADDED from [com.razorpay:standard-core:1.7.22] C:\Users\pro\.gradle\caches\8.9\transforms\b7a6aedaa6fe15db48ac2b82f65677db\transformed\standard-core-1.7.22\AndroidManifest.xml:37:13-65
+	android:name
+		ADDED from [com.razorpay:standard-core:1.7.22] C:\Users\pro\.gradle\caches\8.9\transforms\b7a6aedaa6fe15db48ac2b82f65677db\transformed\standard-core-1.7.22\AndroidManifest.xml:37:21-62
+activity#com.razorpay.CheckoutActivity
+ADDED from [com.razorpay:standard-core:1.7.22] C:\Users\pro\.gradle\caches\8.9\transforms\b7a6aedaa6fe15db48ac2b82f65677db\transformed\standard-core-1.7.22\AndroidManifest.xml:44:9-52:20
+	android:exported
+		ADDED from [com.razorpay:standard-core:1.7.22] C:\Users\pro\.gradle\caches\8.9\transforms\b7a6aedaa6fe15db48ac2b82f65677db\transformed\standard-core-1.7.22\AndroidManifest.xml:47:13-37
+	android:configChanges
+		ADDED from [com.razorpay:standard-core:1.7.22] C:\Users\pro\.gradle\caches\8.9\transforms\b7a6aedaa6fe15db48ac2b82f65677db\transformed\standard-core-1.7.22\AndroidManifest.xml:46:13-83
+	android:theme
+		ADDED from [com.razorpay:standard-core:1.7.22] C:\Users\pro\.gradle\caches\8.9\transforms\b7a6aedaa6fe15db48ac2b82f65677db\transformed\standard-core-1.7.22\AndroidManifest.xml:48:13-49
+	android:name
+		ADDED from [com.razorpay:standard-core:1.7.22] C:\Users\pro\.gradle\caches\8.9\transforms\b7a6aedaa6fe15db48ac2b82f65677db\transformed\standard-core-1.7.22\AndroidManifest.xml:45:13-57
+intent-filter#action:name:android.intent.action.MAIN
+ADDED from [com.razorpay:standard-core:1.7.22] C:\Users\pro\.gradle\caches\8.9\transforms\b7a6aedaa6fe15db48ac2b82f65677db\transformed\standard-core-1.7.22\AndroidManifest.xml:49:13-51:29
+provider#androidx.startup.InitializationProvider
+ADDED from [com.razorpay:standard-core:1.7.22] C:\Users\pro\.gradle\caches\8.9\transforms\b7a6aedaa6fe15db48ac2b82f65677db\transformed\standard-core-1.7.22\AndroidManifest.xml:54:9-65:20
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\pro\.gradle\caches\8.9\transforms\0594a7b5efe8705a5993a84776341842\transformed\startup-runtime-1.1.1\AndroidManifest.xml:26:9-30:34
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\pro\.gradle\caches\8.9\transforms\0594a7b5efe8705a5993a84776341842\transformed\startup-runtime-1.1.1\AndroidManifest.xml:26:9-30:34
+	tools:node
+		ADDED from [com.razorpay:standard-core:1.7.22] C:\Users\pro\.gradle\caches\8.9\transforms\b7a6aedaa6fe15db48ac2b82f65677db\transformed\standard-core-1.7.22\AndroidManifest.xml:58:13-31
+	android:authorities
+		ADDED from [com.razorpay:standard-core:1.7.22] C:\Users\pro\.gradle\caches\8.9\transforms\b7a6aedaa6fe15db48ac2b82f65677db\transformed\standard-core-1.7.22\AndroidManifest.xml:56:13-68
+	android:exported
+		ADDED from [com.razorpay:standard-core:1.7.22] C:\Users\pro\.gradle\caches\8.9\transforms\b7a6aedaa6fe15db48ac2b82f65677db\transformed\standard-core-1.7.22\AndroidManifest.xml:57:13-37
+	android:name
+		ADDED from [com.razorpay:standard-core:1.7.22] C:\Users\pro\.gradle\caches\8.9\transforms\b7a6aedaa6fe15db48ac2b82f65677db\transformed\standard-core-1.7.22\AndroidManifest.xml:55:13-67
+meta-data#com.razorpay.RazorpayInitializer
+ADDED from [com.razorpay:standard-core:1.7.22] C:\Users\pro\.gradle\caches\8.9\transforms\b7a6aedaa6fe15db48ac2b82f65677db\transformed\standard-core-1.7.22\AndroidManifest.xml:59:13-61:52
+	android:value
+		ADDED from [com.razorpay:standard-core:1.7.22] C:\Users\pro\.gradle\caches\8.9\transforms\b7a6aedaa6fe15db48ac2b82f65677db\transformed\standard-core-1.7.22\AndroidManifest.xml:61:17-49
+	android:name
+		ADDED from [com.razorpay:standard-core:1.7.22] C:\Users\pro\.gradle\caches\8.9\transforms\b7a6aedaa6fe15db48ac2b82f65677db\transformed\standard-core-1.7.22\AndroidManifest.xml:60:17-64
+meta-data#com.razorpay.CoreInitializer
+ADDED from [com.razorpay:standard-core:1.7.22] C:\Users\pro\.gradle\caches\8.9\transforms\b7a6aedaa6fe15db48ac2b82f65677db\transformed\standard-core-1.7.22\AndroidManifest.xml:62:13-64:52
+	android:value
+		ADDED from [com.razorpay:standard-core:1.7.22] C:\Users\pro\.gradle\caches\8.9\transforms\b7a6aedaa6fe15db48ac2b82f65677db\transformed\standard-core-1.7.22\AndroidManifest.xml:64:17-49
+	android:name
+		ADDED from [com.razorpay:standard-core:1.7.22] C:\Users\pro\.gradle\caches\8.9\transforms\b7a6aedaa6fe15db48ac2b82f65677db\transformed\standard-core-1.7.22\AndroidManifest.xml:63:17-60
+activity#com.razorpay.MagicXActivity
+ADDED from [com.razorpay:standard-core:1.7.22] C:\Users\pro\.gradle\caches\8.9\transforms\b7a6aedaa6fe15db48ac2b82f65677db\transformed\standard-core-1.7.22\AndroidManifest.xml:67:9-70:75
+	android:exported
+		ADDED from [com.razorpay:standard-core:1.7.22] C:\Users\pro\.gradle\caches\8.9\transforms\b7a6aedaa6fe15db48ac2b82f65677db\transformed\standard-core-1.7.22\AndroidManifest.xml:69:13-37
+	android:theme
+		ADDED from [com.razorpay:standard-core:1.7.22] C:\Users\pro\.gradle\caches\8.9\transforms\b7a6aedaa6fe15db48ac2b82f65677db\transformed\standard-core-1.7.22\AndroidManifest.xml:70:13-72
+	android:name
+		ADDED from [com.razorpay:standard-core:1.7.22] C:\Users\pro\.gradle\caches\8.9\transforms\b7a6aedaa6fe15db48ac2b82f65677db\transformed\standard-core-1.7.22\AndroidManifest.xml:68:13-55
+activity#com.google.android.gms.auth.api.signin.internal.SignInHubActivity
+ADDED from [com.google.android.gms:play-services-auth:21.1.0] C:\Users\pro\.gradle\caches\8.9\transforms\415cf87f96ab6b31c97dd5b7164bbae1\transformed\play-services-auth-21.1.0\AndroidManifest.xml:23:9-27:75
+	android:excludeFromRecents
+		ADDED from [com.google.android.gms:play-services-auth:21.1.0] C:\Users\pro\.gradle\caches\8.9\transforms\415cf87f96ab6b31c97dd5b7164bbae1\transformed\play-services-auth-21.1.0\AndroidManifest.xml:25:13-46
+	android:exported
+		ADDED from [com.google.android.gms:play-services-auth:21.1.0] C:\Users\pro\.gradle\caches\8.9\transforms\415cf87f96ab6b31c97dd5b7164bbae1\transformed\play-services-auth-21.1.0\AndroidManifest.xml:26:13-37
+	android:theme
+		ADDED from [com.google.android.gms:play-services-auth:21.1.0] C:\Users\pro\.gradle\caches\8.9\transforms\415cf87f96ab6b31c97dd5b7164bbae1\transformed\play-services-auth-21.1.0\AndroidManifest.xml:27:13-72
+	android:name
+		ADDED from [com.google.android.gms:play-services-auth:21.1.0] C:\Users\pro\.gradle\caches\8.9\transforms\415cf87f96ab6b31c97dd5b7164bbae1\transformed\play-services-auth-21.1.0\AndroidManifest.xml:24:13-93
+service#com.google.android.gms.auth.api.signin.RevocationBoundService
+ADDED from [com.google.android.gms:play-services-auth:21.1.0] C:\Users\pro\.gradle\caches\8.9\transforms\415cf87f96ab6b31c97dd5b7164bbae1\transformed\play-services-auth-21.1.0\AndroidManifest.xml:33:9-37:51
+	android:exported
+		ADDED from [com.google.android.gms:play-services-auth:21.1.0] C:\Users\pro\.gradle\caches\8.9\transforms\415cf87f96ab6b31c97dd5b7164bbae1\transformed\play-services-auth-21.1.0\AndroidManifest.xml:35:13-36
+	android:visibleToInstantApps
+		ADDED from [com.google.android.gms:play-services-auth:21.1.0] C:\Users\pro\.gradle\caches\8.9\transforms\415cf87f96ab6b31c97dd5b7164bbae1\transformed\play-services-auth-21.1.0\AndroidManifest.xml:37:13-48
+	android:permission
+		ADDED from [com.google.android.gms:play-services-auth:21.1.0] C:\Users\pro\.gradle\caches\8.9\transforms\415cf87f96ab6b31c97dd5b7164bbae1\transformed\play-services-auth-21.1.0\AndroidManifest.xml:36:13-107
+	android:name
+		ADDED from [com.google.android.gms:play-services-auth:21.1.0] C:\Users\pro\.gradle\caches\8.9\transforms\415cf87f96ab6b31c97dd5b7164bbae1\transformed\play-services-auth-21.1.0\AndroidManifest.xml:34:13-89
+uses-feature#0x00020000
+ADDED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\pro\.gradle\caches\8.9\transforms\df6ca28c4552f719282254e9595c8b2d\transformed\play-services-maps-17.0.0\AndroidManifest.xml:26:5-28:35
+	android:glEsVersion
+		ADDED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\pro\.gradle\caches\8.9\transforms\df6ca28c4552f719282254e9595c8b2d\transformed\play-services-maps-17.0.0\AndroidManifest.xml:27:9-41
+	android:required
+		ADDED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\pro\.gradle\caches\8.9\transforms\df6ca28c4552f719282254e9595c8b2d\transformed\play-services-maps-17.0.0\AndroidManifest.xml:28:9-32
+uses-library#org.apache.http.legacy
+ADDED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\pro\.gradle\caches\8.9\transforms\df6ca28c4552f719282254e9595c8b2d\transformed\play-services-maps-17.0.0\AndroidManifest.xml:33:9-35:40
+	android:required
+		ADDED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\pro\.gradle\caches\8.9\transforms\df6ca28c4552f719282254e9595c8b2d\transformed\play-services-maps-17.0.0\AndroidManifest.xml:35:13-37
+	android:name
+		ADDED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\pro\.gradle\caches\8.9\transforms\df6ca28c4552f719282254e9595c8b2d\transformed\play-services-maps-17.0.0\AndroidManifest.xml:34:13-50
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:18.3.0] C:\Users\pro\.gradle\caches\8.9\transforms\826e8a996a29f984bde5355a9b8b6428\transformed\play-services-base-18.3.0\AndroidManifest.xml:20:9-22:45
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:18.3.0] C:\Users\pro\.gradle\caches\8.9\transforms\826e8a996a29f984bde5355a9b8b6428\transformed\play-services-base-18.3.0\AndroidManifest.xml:22:19-43
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:18.3.0] C:\Users\pro\.gradle\caches\8.9\transforms\826e8a996a29f984bde5355a9b8b6428\transformed\play-services-base-18.3.0\AndroidManifest.xml:21:19-78
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:18.3.0] C:\Users\pro\.gradle\caches\8.9\transforms\826e8a996a29f984bde5355a9b8b6428\transformed\play-services-base-18.3.0\AndroidManifest.xml:20:19-85
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:18.3.0] C:\Users\pro\.gradle\caches\8.9\transforms\93a8b81d39f91947f6c46d71aa34b0d5\transformed\play-services-basement-18.3.0\AndroidManifest.xml:21:9-23:69
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:18.3.0] C:\Users\pro\.gradle\caches\8.9\transforms\93a8b81d39f91947f6c46d71aa34b0d5\transformed\play-services-basement-18.3.0\AndroidManifest.xml:23:13-66
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:18.3.0] C:\Users\pro\.gradle\caches\8.9\transforms\93a8b81d39f91947f6c46d71aa34b0d5\transformed\play-services-basement-18.3.0\AndroidManifest.xml:22:13-58
+uses-permission#android.permission.READ_BASIC_PHONE_STATE
+ADDED from [com.razorpay:core:1.0.22] C:\Users\pro\.gradle\caches\8.9\transforms\3522ffcb280d0a9a43824679116974e3\transformed\core-1.0.22\AndroidManifest.xml:10:5-81
+	android:name
+		ADDED from [com.razorpay:core:1.0.22] C:\Users\pro\.gradle\caches\8.9\transforms\3522ffcb280d0a9a43824679116974e3\transformed\core-1.0.22\AndroidManifest.xml:10:22-78
+intent#action:name:android.intent.action.VIEW+data:scheme:upi
+ADDED from [com.razorpay:core:1.0.22] C:\Users\pro\.gradle\caches\8.9\transforms\3522ffcb280d0a9a43824679116974e3\transformed\core-1.0.22\AndroidManifest.xml:17:9-21:18
+intent#action:name:android.intent.action.VIEW+data:scheme:credpay
+ADDED from [com.razorpay:core:1.0.22] C:\Users\pro\.gradle\caches\8.9\transforms\3522ffcb280d0a9a43824679116974e3\transformed\core-1.0.22\AndroidManifest.xml:27:9-31:18
+activity#com.razorpay.DeeplinkActivity
+ADDED from [com.razorpay:core:1.0.22] C:\Users\pro\.gradle\caches\8.9\transforms\3522ffcb280d0a9a43824679116974e3\transformed\core-1.0.22\AndroidManifest.xml:35:9-49:20
+	android:exported
+		ADDED from [com.razorpay:core:1.0.22] C:\Users\pro\.gradle\caches\8.9\transforms\3522ffcb280d0a9a43824679116974e3\transformed\core-1.0.22\AndroidManifest.xml:37:13-36
+	android:theme
+		ADDED from [com.razorpay:core:1.0.22] C:\Users\pro\.gradle\caches\8.9\transforms\3522ffcb280d0a9a43824679116974e3\transformed\core-1.0.22\AndroidManifest.xml:38:13-49
+	android:name
+		ADDED from [com.razorpay:core:1.0.22] C:\Users\pro\.gradle\caches\8.9\transforms\3522ffcb280d0a9a43824679116974e3\transformed\core-1.0.22\AndroidManifest.xml:36:13-57
+intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:host:${applicationId}+data:scheme:razorpay
+ADDED from [com.razorpay:core:1.0.22] C:\Users\pro\.gradle\caches\8.9\transforms\3522ffcb280d0a9a43824679116974e3\transformed\core-1.0.22\AndroidManifest.xml:39:13-48:29
+intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:host:com.samrambakeralam.texlearn.debug+data:scheme:razorpay
+ADDED from [com.razorpay:core:1.0.22] C:\Users\pro\.gradle\caches\8.9\transforms\3522ffcb280d0a9a43824679116974e3\transformed\core-1.0.22\AndroidManifest.xml:39:13-48:29
+receiver#com.razorpay.UpiChooserSelectionReceiver
+ADDED from [com.razorpay:core:1.0.22] C:\Users\pro\.gradle\caches\8.9\transforms\3522ffcb280d0a9a43824679116974e3\transformed\core-1.0.22\AndroidManifest.xml:51:9-53:40
+	android:exported
+		ADDED from [com.razorpay:core:1.0.22] C:\Users\pro\.gradle\caches\8.9\transforms\3522ffcb280d0a9a43824679116974e3\transformed\core-1.0.22\AndroidManifest.xml:53:13-37
+	android:name
+		ADDED from [com.razorpay:core:1.0.22] C:\Users\pro\.gradle\caches\8.9\transforms\3522ffcb280d0a9a43824679116974e3\transformed\core-1.0.22\AndroidManifest.xml:52:13-68

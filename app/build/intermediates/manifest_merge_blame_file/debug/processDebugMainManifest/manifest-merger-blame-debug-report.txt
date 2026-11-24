@@ -1,0 +1,344 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.samrambakeralam.texlearn.debug"
+4    android:versionCode="2"
+5    android:versionName="1.0.1-debug" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="23"
+9        android:targetSdkVersion="34" />
+10
+11    <queries>
+11-->C:\Users\pro\Documents\GitHub\TEXLearn-Android\app\src\main\AndroidManifest.xml:3:5-8:15
+12        <package android:name="com.google.android.apps.nbu.paisa.user" />
+12-->C:\Users\pro\Documents\GitHub\TEXLearn-Android\app\src\main\AndroidManifest.xml:4:9-74
+12-->C:\Users\pro\Documents\GitHub\TEXLearn-Android\app\src\main\AndroidManifest.xml:4:18-71
+13        <package android:name="com.phonepe.app" />
+13-->C:\Users\pro\Documents\GitHub\TEXLearn-Android\app\src\main\AndroidManifest.xml:5:9-51
+13-->C:\Users\pro\Documents\GitHub\TEXLearn-Android\app\src\main\AndroidManifest.xml:5:18-48
+14        <package android:name="net.one97.paytm" />
+14-->C:\Users\pro\Documents\GitHub\TEXLearn-Android\app\src\main\AndroidManifest.xml:6:9-51
+14-->C:\Users\pro\Documents\GitHub\TEXLearn-Android\app\src\main\AndroidManifest.xml:6:18-48
+15        <package android:name="in.org.npci.upiapp" />
+15-->C:\Users\pro\Documents\GitHub\TEXLearn-Android\app\src\main\AndroidManifest.xml:7:9-54
+15-->C:\Users\pro\Documents\GitHub\TEXLearn-Android\app\src\main\AndroidManifest.xml:7:18-51
+16
+17        <intent>
+17-->[com.razorpay:standard-core:1.7.22] C:\Users\pro\.gradle\caches\8.9\transforms\b7a6aedaa6fe15db48ac2b82f65677db\transformed\standard-core-1.7.22\AndroidManifest.xml:16:9-22:18
+18            <action android:name="android.intent.action.VIEW" />
+18-->C:\Users\pro\Documents\GitHub\TEXLearn-Android\app\src\main\AndroidManifest.xml:32:5-57
+18-->C:\Users\pro\Documents\GitHub\TEXLearn-Android\app\src\main\AndroidManifest.xml:32:13-54
+19
+20            <data
+20-->C:\Users\pro\Documents\GitHub\TEXLearn-Android\app\src\main\AndroidManifest.xml:37:5-40:42
+21                android:mimeType="*/*"
+22                android:scheme="*" />
+22-->C:\Users\pro\Documents\GitHub\TEXLearn-Android\app\src\main\AndroidManifest.xml:38:9-31
+23        </intent>
+24        <intent>
+24-->[com.razorpay:standard-core:1.7.22] C:\Users\pro\.gradle\caches\8.9\transforms\b7a6aedaa6fe15db48ac2b82f65677db\transformed\standard-core-1.7.22\AndroidManifest.xml:23:9-32:18
+25            <action android:name="android.intent.action.VIEW" />
+25-->C:\Users\pro\Documents\GitHub\TEXLearn-Android\app\src\main\AndroidManifest.xml:32:5-57
+25-->C:\Users\pro\Documents\GitHub\TEXLearn-Android\app\src\main\AndroidManifest.xml:32:13-54
+26
+27            <category android:name="android.intent.category.BROWSABLE" />
+27-->C:\Users\pro\Documents\GitHub\TEXLearn-Android\app\src\main\AndroidManifest.xml:35:5-66
+27-->C:\Users\pro\Documents\GitHub\TEXLearn-Android\app\src\main\AndroidManifest.xml:35:15-63
+28
+29            <data
+29-->C:\Users\pro\Documents\GitHub\TEXLearn-Android\app\src\main\AndroidManifest.xml:37:5-40:42
+30                android:host="pay"
+30-->C:\Users\pro\Documents\GitHub\TEXLearn-Android\app\src\main\AndroidManifest.xml:39:9-49
+31                android:mimeType="*/*"
+32                android:scheme="upi" />
+32-->C:\Users\pro\Documents\GitHub\TEXLearn-Android\app\src\main\AndroidManifest.xml:38:9-31
+33        </intent>
+34        <intent>
+34-->[com.razorpay:standard-core:1.7.22] C:\Users\pro\.gradle\caches\8.9\transforms\b7a6aedaa6fe15db48ac2b82f65677db\transformed\standard-core-1.7.22\AndroidManifest.xml:33:9-35:18
+35            <action android:name="android.intent.action.MAIN" />
+35-->C:\Users\pro\Documents\GitHub\TEXLearn-Android\app\src\main\AndroidManifest.xml:27:17-69
+35-->C:\Users\pro\Documents\GitHub\TEXLearn-Android\app\src\main\AndroidManifest.xml:27:25-66
+36        </intent>
+37        <intent>
+37-->[com.razorpay:standard-core:1.7.22] C:\Users\pro\.gradle\caches\8.9\transforms\b7a6aedaa6fe15db48ac2b82f65677db\transformed\standard-core-1.7.22\AndroidManifest.xml:36:9-40:18
+38            <action android:name="android.intent.action.SEND" />
+38-->[com.razorpay:standard-core:1.7.22] C:\Users\pro\.gradle\caches\8.9\transforms\b7a6aedaa6fe15db48ac2b82f65677db\transformed\standard-core-1.7.22\AndroidManifest.xml:37:13-65
+38-->[com.razorpay:standard-core:1.7.22] C:\Users\pro\.gradle\caches\8.9\transforms\b7a6aedaa6fe15db48ac2b82f65677db\transformed\standard-core-1.7.22\AndroidManifest.xml:37:21-62
+39
+40            <data android:mimeType="*/*" />
+40-->C:\Users\pro\Documents\GitHub\TEXLearn-Android\app\src\main\AndroidManifest.xml:37:5-40:42
+41        </intent>
+42        <intent>
+42-->[com.razorpay:core:1.0.22] C:\Users\pro\.gradle\caches\8.9\transforms\3522ffcb280d0a9a43824679116974e3\transformed\core-1.0.22\AndroidManifest.xml:17:9-21:18
+43            <action android:name="android.intent.action.VIEW" />
+43-->C:\Users\pro\Documents\GitHub\TEXLearn-Android\app\src\main\AndroidManifest.xml:32:5-57
+43-->C:\Users\pro\Documents\GitHub\TEXLearn-Android\app\src\main\AndroidManifest.xml:32:13-54
+44
+45            <data android:scheme="upi" />
+45-->C:\Users\pro\Documents\GitHub\TEXLearn-Android\app\src\main\AndroidManifest.xml:37:5-40:42
+45-->C:\Users\pro\Documents\GitHub\TEXLearn-Android\app\src\main\AndroidManifest.xml:38:9-31
+46        </intent>
+47        <!--
+48             Package visibility (API 30+) for CRED discovery: BaseUtils queries
+49             credpay:// handlers (e.g. credpay://bio_auth/check for CRED biometric
+50             capability, credpay://checkout for CRED app detection)
+51        -->
+52        <intent>
+52-->[com.razorpay:core:1.0.22] C:\Users\pro\.gradle\caches\8.9\transforms\3522ffcb280d0a9a43824679116974e3\transformed\core-1.0.22\AndroidManifest.xml:27:9-31:18
+53            <action android:name="android.intent.action.VIEW" />
+53-->C:\Users\pro\Documents\GitHub\TEXLearn-Android\app\src\main\AndroidManifest.xml:32:5-57
+53-->C:\Users\pro\Documents\GitHub\TEXLearn-Android\app\src\main\AndroidManifest.xml:32:13-54
+54
+55            <data android:scheme="credpay" />
+55-->C:\Users\pro\Documents\GitHub\TEXLearn-Android\app\src\main\AndroidManifest.xml:37:5-40:42
+55-->C:\Users\pro\Documents\GitHub\TEXLearn-Android\app\src\main\AndroidManifest.xml:38:9-31
+56        </intent>
+57    </queries>
+58
+59    <uses-permission android:name="android.permission.INTERNET" />
+59-->C:\Users\pro\Documents\GitHub\TEXLearn-Android\app\src\main\AndroidManifest.xml:10:5-67
+59-->C:\Users\pro\Documents\GitHub\TEXLearn-Android\app\src\main\AndroidManifest.xml:10:22-64
+60    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+60-->C:\Users\pro\Documents\GitHub\TEXLearn-Android\app\src\main\AndroidManifest.xml:11:5-79
+60-->C:\Users\pro\Documents\GitHub\TEXLearn-Android\app\src\main\AndroidManifest.xml:11:22-76
+61    <uses-permission android:name="android.permission.NFC" />
+61-->[com.razorpay:standard-core:1.7.22] C:\Users\pro\.gradle\caches\8.9\transforms\b7a6aedaa6fe15db48ac2b82f65677db\transformed\standard-core-1.7.22\AndroidManifest.xml:9:5-62
+61-->[com.razorpay:standard-core:1.7.22] C:\Users\pro\.gradle\caches\8.9\transforms\b7a6aedaa6fe15db48ac2b82f65677db\transformed\standard-core-1.7.22\AndroidManifest.xml:9:22-59
+62
+63    <uses-feature
+63-->[com.razorpay:standard-core:1.7.22] C:\Users\pro\.gradle\caches\8.9\transforms\b7a6aedaa6fe15db48ac2b82f65677db\transformed\standard-core-1.7.22\AndroidManifest.xml:11:5-13:36
+64        android:name="android.hardware.nfc"
+64-->[com.razorpay:standard-core:1.7.22] C:\Users\pro\.gradle\caches\8.9\transforms\b7a6aedaa6fe15db48ac2b82f65677db\transformed\standard-core-1.7.22\AndroidManifest.xml:12:9-44
+65        android:required="false" />
+65-->[com.razorpay:standard-core:1.7.22] C:\Users\pro\.gradle\caches\8.9\transforms\b7a6aedaa6fe15db48ac2b82f65677db\transformed\standard-core-1.7.22\AndroidManifest.xml:13:9-33
+66    <uses-feature
+66-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\pro\.gradle\caches\8.9\transforms\df6ca28c4552f719282254e9595c8b2d\transformed\play-services-maps-17.0.0\AndroidManifest.xml:26:5-28:35
+67        android:glEsVersion="0x00020000"
+67-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\pro\.gradle\caches\8.9\transforms\df6ca28c4552f719282254e9595c8b2d\transformed\play-services-maps-17.0.0\AndroidManifest.xml:27:9-41
+68        android:required="true" /> <!-- Normal permission, automatically granted on API 23+ -->
+68-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\pro\.gradle\caches\8.9\transforms\df6ca28c4552f719282254e9595c8b2d\transformed\play-services-maps-17.0.0\AndroidManifest.xml:28:9-32
+69    <uses-permission android:name="android.permission.READ_BASIC_PHONE_STATE" />
+69-->[com.razorpay:core:1.0.22] C:\Users\pro\.gradle\caches\8.9\transforms\3522ffcb280d0a9a43824679116974e3\transformed\core-1.0.22\AndroidManifest.xml:10:5-81
+69-->[com.razorpay:core:1.0.22] C:\Users\pro\.gradle\caches\8.9\transforms\3522ffcb280d0a9a43824679116974e3\transformed\core-1.0.22\AndroidManifest.xml:10:22-78
+70
+71    <application
+71-->C:\Users\pro\Documents\GitHub\TEXLearn-Android\app\src\main\AndroidManifest.xml:13:5-55:20
+72        android:allowBackup="false"
+72-->C:\Users\pro\Documents\GitHub\TEXLearn-Android\app\src\main\AndroidManifest.xml:14:9-36
+73        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+73-->[androidx.core:core:1.8.0] C:\Users\pro\.gradle\caches\8.9\transforms\4262ea96a2e686067147606d4e19b233\transformed\core-1.8.0\AndroidManifest.xml:24:18-86
+74        android:debuggable="true"
+75        android:extractNativeLibs="false"
+76        android:icon="@mipmap/ic_launcher"
+76-->C:\Users\pro\Documents\GitHub\TEXLearn-Android\app\src\main\AndroidManifest.xml:17:9-43
+77        android:label="TEXLearn"
+77-->C:\Users\pro\Documents\GitHub\TEXLearn-Android\app\src\main\AndroidManifest.xml:16:9-33
+78        android:roundIcon="@mipmap/ic_launcher_round"
+78-->C:\Users\pro\Documents\GitHub\TEXLearn-Android\app\src\main\AndroidManifest.xml:18:9-54
+79        android:supportsRtl="true"
+79-->C:\Users\pro\Documents\GitHub\TEXLearn-Android\app\src\main\AndroidManifest.xml:19:9-35
+80        android:theme="@style/Theme.TEXLearn.Splash"
+80-->C:\Users\pro\Documents\GitHub\TEXLearn-Android\app\src\main\AndroidManifest.xml:20:9-53
+81        android:usesCleartextTraffic="false" >
+81-->C:\Users\pro\Documents\GitHub\TEXLearn-Android\app\src\main\AndroidManifest.xml:15:9-45
+82        <activity
+82-->C:\Users\pro\Documents\GitHub\TEXLearn-Android\app\src\main\AndroidManifest.xml:21:9-54:23
+83            android:name="com.samrambakeralam.texlearn.MainActivity"
+83-->C:\Users\pro\Documents\GitHub\TEXLearn-Android\app\src\main\AndroidManifest.xml:22:13-41
+84            android:configChanges="orientation|screenSize|keyboardHidden"
+84-->C:\Users\pro\Documents\GitHub\TEXLearn-Android\app\src\main\AndroidManifest.xml:23:13-74
+85            android:exported="true"
+85-->C:\Users\pro\Documents\GitHub\TEXLearn-Android\app\src\main\AndroidManifest.xml:24:13-36
+86            android:launchMode="singleTop" >
+86-->C:\Users\pro\Documents\GitHub\TEXLearn-Android\app\src\main\AndroidManifest.xml:25:13-43
+87            <intent-filter>
+87-->C:\Users\pro\Documents\GitHub\TEXLearn-Android\app\src\main\AndroidManifest.xml:26:13-29:29
+88                <action android:name="android.intent.action.MAIN" />
+88-->C:\Users\pro\Documents\GitHub\TEXLearn-Android\app\src\main\AndroidManifest.xml:27:17-69
+88-->C:\Users\pro\Documents\GitHub\TEXLearn-Android\app\src\main\AndroidManifest.xml:27:25-66
+89
+90                <category android:name="android.intent.category.LAUNCHER" />
+90-->C:\Users\pro\Documents\GitHub\TEXLearn-Android\app\src\main\AndroidManifest.xml:28:17-77
+90-->C:\Users\pro\Documents\GitHub\TEXLearn-Android\app\src\main\AndroidManifest.xml:28:27-74
+91            </intent-filter>
+92            <intent-filter android:autoVerify="true" >
+92-->C:\Users\pro\Documents\GitHub\TEXLearn-Android\app\src\main\AndroidManifest.xml:31:1-41:17
+92-->C:\Users\pro\Documents\GitHub\TEXLearn-Android\app\src\main\AndroidManifest.xml:31:16-41
+93                <action android:name="android.intent.action.VIEW" />
+93-->C:\Users\pro\Documents\GitHub\TEXLearn-Android\app\src\main\AndroidManifest.xml:32:5-57
+93-->C:\Users\pro\Documents\GitHub\TEXLearn-Android\app\src\main\AndroidManifest.xml:32:13-54
+94
+95                <category android:name="android.intent.category.DEFAULT" />
+95-->C:\Users\pro\Documents\GitHub\TEXLearn-Android\app\src\main\AndroidManifest.xml:34:5-64
+95-->C:\Users\pro\Documents\GitHub\TEXLearn-Android\app\src\main\AndroidManifest.xml:34:15-61
+96                <category android:name="android.intent.category.BROWSABLE" />
+96-->C:\Users\pro\Documents\GitHub\TEXLearn-Android\app\src\main\AndroidManifest.xml:35:5-66
+96-->C:\Users\pro\Documents\GitHub\TEXLearn-Android\app\src\main\AndroidManifest.xml:35:15-63
+97
+98                <data
+98-->C:\Users\pro\Documents\GitHub\TEXLearn-Android\app\src\main\AndroidManifest.xml:37:5-40:42
+99                    android:host="samrambakeralam.github.io"
+99-->C:\Users\pro\Documents\GitHub\TEXLearn-Android\app\src\main\AndroidManifest.xml:39:9-49
+100                    android:pathPrefix="/TEXLearn"
+100-->C:\Users\pro\Documents\GitHub\TEXLearn-Android\app\src\main\AndroidManifest.xml:40:9-39
+101                    android:scheme="https" />
+101-->C:\Users\pro\Documents\GitHub\TEXLearn-Android\app\src\main\AndroidManifest.xml:38:9-31
+102            </intent-filter>
+103            <intent-filter android:autoVerify="true" >
+103-->C:\Users\pro\Documents\GitHub\TEXLearn-Android\app\src\main\AndroidManifest.xml:42:1-52:17
+103-->C:\Users\pro\Documents\GitHub\TEXLearn-Android\app\src\main\AndroidManifest.xml:42:16-41
+104                <action android:name="android.intent.action.VIEW" />
+104-->C:\Users\pro\Documents\GitHub\TEXLearn-Android\app\src\main\AndroidManifest.xml:32:5-57
+104-->C:\Users\pro\Documents\GitHub\TEXLearn-Android\app\src\main\AndroidManifest.xml:32:13-54
+105
+106                <category android:name="android.intent.category.DEFAULT" />
+106-->C:\Users\pro\Documents\GitHub\TEXLearn-Android\app\src\main\AndroidManifest.xml:34:5-64
+106-->C:\Users\pro\Documents\GitHub\TEXLearn-Android\app\src\main\AndroidManifest.xml:34:15-61
+107                <category android:name="android.intent.category.BROWSABLE" />
+107-->C:\Users\pro\Documents\GitHub\TEXLearn-Android\app\src\main\AndroidManifest.xml:35:5-66
+107-->C:\Users\pro\Documents\GitHub\TEXLearn-Android\app\src\main\AndroidManifest.xml:35:15-63
+108
+109                <data
+109-->C:\Users\pro\Documents\GitHub\TEXLearn-Android\app\src\main\AndroidManifest.xml:37:5-40:42
+110                    android:host="texlearn.in"
+110-->C:\Users\pro\Documents\GitHub\TEXLearn-Android\app\src\main\AndroidManifest.xml:39:9-49
+111                    android:pathPrefix="/"
+111-->C:\Users\pro\Documents\GitHub\TEXLearn-Android\app\src\main\AndroidManifest.xml:40:9-39
+112                    android:scheme="https" />
+112-->C:\Users\pro\Documents\GitHub\TEXLearn-Android\app\src\main\AndroidManifest.xml:38:9-31
+113            </intent-filter>
+114        </activity>
+115        <activity
+115-->[com.razorpay:standard-core:1.7.22] C:\Users\pro\.gradle\caches\8.9\transforms\b7a6aedaa6fe15db48ac2b82f65677db\transformed\standard-core-1.7.22\AndroidManifest.xml:44:9-52:20
+116            android:name="com.razorpay.CheckoutActivity"
+116-->[com.razorpay:standard-core:1.7.22] C:\Users\pro\.gradle\caches\8.9\transforms\b7a6aedaa6fe15db48ac2b82f65677db\transformed\standard-core-1.7.22\AndroidManifest.xml:45:13-57
+117            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+117-->[com.razorpay:standard-core:1.7.22] C:\Users\pro\.gradle\caches\8.9\transforms\b7a6aedaa6fe15db48ac2b82f65677db\transformed\standard-core-1.7.22\AndroidManifest.xml:46:13-83
+118            android:exported="false"
+118-->[com.razorpay:standard-core:1.7.22] C:\Users\pro\.gradle\caches\8.9\transforms\b7a6aedaa6fe15db48ac2b82f65677db\transformed\standard-core-1.7.22\AndroidManifest.xml:47:13-37
+119            android:theme="@style/CheckoutTheme" >
+119-->[com.razorpay:standard-core:1.7.22] C:\Users\pro\.gradle\caches\8.9\transforms\b7a6aedaa6fe15db48ac2b82f65677db\transformed\standard-core-1.7.22\AndroidManifest.xml:48:13-49
+120            <intent-filter>
+120-->[com.razorpay:standard-core:1.7.22] C:\Users\pro\.gradle\caches\8.9\transforms\b7a6aedaa6fe15db48ac2b82f65677db\transformed\standard-core-1.7.22\AndroidManifest.xml:49:13-51:29
+121                <action android:name="android.intent.action.MAIN" />
+121-->C:\Users\pro\Documents\GitHub\TEXLearn-Android\app\src\main\AndroidManifest.xml:27:17-69
+121-->C:\Users\pro\Documents\GitHub\TEXLearn-Android\app\src\main\AndroidManifest.xml:27:25-66
+122            </intent-filter>
+123        </activity>
+124
+125        <provider
+125-->[com.razorpay:standard-core:1.7.22] C:\Users\pro\.gradle\caches\8.9\transforms\b7a6aedaa6fe15db48ac2b82f65677db\transformed\standard-core-1.7.22\AndroidManifest.xml:54:9-65:20
+126            android:name="androidx.startup.InitializationProvider"
+126-->[com.razorpay:standard-core:1.7.22] C:\Users\pro\.gradle\caches\8.9\transforms\b7a6aedaa6fe15db48ac2b82f65677db\transformed\standard-core-1.7.22\AndroidManifest.xml:55:13-67
+127            android:authorities="com.samrambakeralam.texlearn.debug.androidx-startup"
+127-->[com.razorpay:standard-core:1.7.22] C:\Users\pro\.gradle\caches\8.9\transforms\b7a6aedaa6fe15db48ac2b82f65677db\transformed\standard-core-1.7.22\AndroidManifest.xml:56:13-68
+128            android:exported="false" >
+128-->[com.razorpay:standard-core:1.7.22] C:\Users\pro\.gradle\caches\8.9\transforms\b7a6aedaa6fe15db48ac2b82f65677db\transformed\standard-core-1.7.22\AndroidManifest.xml:57:13-37
+129            <meta-data
+129-->[com.razorpay:standard-core:1.7.22] C:\Users\pro\.gradle\caches\8.9\transforms\b7a6aedaa6fe15db48ac2b82f65677db\transformed\standard-core-1.7.22\AndroidManifest.xml:59:13-61:52
+130                android:name="com.razorpay.RazorpayInitializer"
+130-->[com.razorpay:standard-core:1.7.22] C:\Users\pro\.gradle\caches\8.9\transforms\b7a6aedaa6fe15db48ac2b82f65677db\transformed\standard-core-1.7.22\AndroidManifest.xml:60:17-64
+131                android:value="androidx.startup" />
+131-->[com.razorpay:standard-core:1.7.22] C:\Users\pro\.gradle\caches\8.9\transforms\b7a6aedaa6fe15db48ac2b82f65677db\transformed\standard-core-1.7.22\AndroidManifest.xml:61:17-49
+132            <meta-data
+132-->[com.razorpay:standard-core:1.7.22] C:\Users\pro\.gradle\caches\8.9\transforms\b7a6aedaa6fe15db48ac2b82f65677db\transformed\standard-core-1.7.22\AndroidManifest.xml:62:13-64:52
+133                android:name="com.razorpay.CoreInitializer"
+133-->[com.razorpay:standard-core:1.7.22] C:\Users\pro\.gradle\caches\8.9\transforms\b7a6aedaa6fe15db48ac2b82f65677db\transformed\standard-core-1.7.22\AndroidManifest.xml:63:17-60
+134                android:value="androidx.startup" />
+134-->[com.razorpay:standard-core:1.7.22] C:\Users\pro\.gradle\caches\8.9\transforms\b7a6aedaa6fe15db48ac2b82f65677db\transformed\standard-core-1.7.22\AndroidManifest.xml:64:17-49
+135        </provider>
+136
+137        <activity
+137-->[com.razorpay:standard-core:1.7.22] C:\Users\pro\.gradle\caches\8.9\transforms\b7a6aedaa6fe15db48ac2b82f65677db\transformed\standard-core-1.7.22\AndroidManifest.xml:67:9-70:75
+138            android:name="com.razorpay.MagicXActivity"
+138-->[com.razorpay:standard-core:1.7.22] C:\Users\pro\.gradle\caches\8.9\transforms\b7a6aedaa6fe15db48ac2b82f65677db\transformed\standard-core-1.7.22\AndroidManifest.xml:68:13-55
+139            android:exported="false"
+139-->[com.razorpay:standard-core:1.7.22] C:\Users\pro\.gradle\caches\8.9\transforms\b7a6aedaa6fe15db48ac2b82f65677db\transformed\standard-core-1.7.22\AndroidManifest.xml:69:13-37
+140            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+140-->[com.razorpay:standard-core:1.7.22] C:\Users\pro\.gradle\caches\8.9\transforms\b7a6aedaa6fe15db48ac2b82f65677db\transformed\standard-core-1.7.22\AndroidManifest.xml:70:13-72
+141        <activity
+141-->[com.google.android.gms:play-services-auth:21.1.0] C:\Users\pro\.gradle\caches\8.9\transforms\415cf87f96ab6b31c97dd5b7164bbae1\transformed\play-services-auth-21.1.0\AndroidManifest.xml:23:9-27:75
+142            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+142-->[com.google.android.gms:play-services-auth:21.1.0] C:\Users\pro\.gradle\caches\8.9\transforms\415cf87f96ab6b31c97dd5b7164bbae1\transformed\play-services-auth-21.1.0\AndroidManifest.xml:24:13-93
+143            android:excludeFromRecents="true"
+143-->[com.google.android.gms:play-services-auth:21.1.0] C:\Users\pro\.gradle\caches\8.9\transforms\415cf87f96ab6b31c97dd5b7164bbae1\transformed\play-services-auth-21.1.0\AndroidManifest.xml:25:13-46
+144            android:exported="false"
+144-->[com.google.android.gms:play-services-auth:21.1.0] C:\Users\pro\.gradle\caches\8.9\transforms\415cf87f96ab6b31c97dd5b7164bbae1\transformed\play-services-auth-21.1.0\AndroidManifest.xml:26:13-37
+145            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+145-->[com.google.android.gms:play-services-auth:21.1.0] C:\Users\pro\.gradle\caches\8.9\transforms\415cf87f96ab6b31c97dd5b7164bbae1\transformed\play-services-auth-21.1.0\AndroidManifest.xml:27:13-72
+146        <!--
+147            Service handling Google Sign-In user revocation. For apps that do not integrate with
+148            Google Sign-In, this service will never be started.
+149        -->
+150        <service
+150-->[com.google.android.gms:play-services-auth:21.1.0] C:\Users\pro\.gradle\caches\8.9\transforms\415cf87f96ab6b31c97dd5b7164bbae1\transformed\play-services-auth-21.1.0\AndroidManifest.xml:33:9-37:51
+151            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+151-->[com.google.android.gms:play-services-auth:21.1.0] C:\Users\pro\.gradle\caches\8.9\transforms\415cf87f96ab6b31c97dd5b7164bbae1\transformed\play-services-auth-21.1.0\AndroidManifest.xml:34:13-89
+152            android:exported="true"
+152-->[com.google.android.gms:play-services-auth:21.1.0] C:\Users\pro\.gradle\caches\8.9\transforms\415cf87f96ab6b31c97dd5b7164bbae1\transformed\play-services-auth-21.1.0\AndroidManifest.xml:35:13-36
+153            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+153-->[com.google.android.gms:play-services-auth:21.1.0] C:\Users\pro\.gradle\caches\8.9\transforms\415cf87f96ab6b31c97dd5b7164bbae1\transformed\play-services-auth-21.1.0\AndroidManifest.xml:36:13-107
+154            android:visibleToInstantApps="true" /> <!-- Needs to be explicitly declared on P+ -->
+154-->[com.google.android.gms:play-services-auth:21.1.0] C:\Users\pro\.gradle\caches\8.9\transforms\415cf87f96ab6b31c97dd5b7164bbae1\transformed\play-services-auth-21.1.0\AndroidManifest.xml:37:13-48
+155        <uses-library
+155-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\pro\.gradle\caches\8.9\transforms\df6ca28c4552f719282254e9595c8b2d\transformed\play-services-maps-17.0.0\AndroidManifest.xml:33:9-35:40
+156            android:name="org.apache.http.legacy"
+156-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\pro\.gradle\caches\8.9\transforms\df6ca28c4552f719282254e9595c8b2d\transformed\play-services-maps-17.0.0\AndroidManifest.xml:34:13-50
+157            android:required="false" />
+157-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\pro\.gradle\caches\8.9\transforms\df6ca28c4552f719282254e9595c8b2d\transformed\play-services-maps-17.0.0\AndroidManifest.xml:35:13-37
+158
+159        <activity
+159-->[com.google.android.gms:play-services-base:18.3.0] C:\Users\pro\.gradle\caches\8.9\transforms\826e8a996a29f984bde5355a9b8b6428\transformed\play-services-base-18.3.0\AndroidManifest.xml:20:9-22:45
+160            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+160-->[com.google.android.gms:play-services-base:18.3.0] C:\Users\pro\.gradle\caches\8.9\transforms\826e8a996a29f984bde5355a9b8b6428\transformed\play-services-base-18.3.0\AndroidManifest.xml:20:19-85
+161            android:exported="false"
+161-->[com.google.android.gms:play-services-base:18.3.0] C:\Users\pro\.gradle\caches\8.9\transforms\826e8a996a29f984bde5355a9b8b6428\transformed\play-services-base-18.3.0\AndroidManifest.xml:22:19-43
+162            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+162-->[com.google.android.gms:play-services-base:18.3.0] C:\Users\pro\.gradle\caches\8.9\transforms\826e8a996a29f984bde5355a9b8b6428\transformed\play-services-base-18.3.0\AndroidManifest.xml:21:19-78
+163
+164        <meta-data
+164-->[com.google.android.gms:play-services-basement:18.3.0] C:\Users\pro\.gradle\caches\8.9\transforms\93a8b81d39f91947f6c46d71aa34b0d5\transformed\play-services-basement-18.3.0\AndroidManifest.xml:21:9-23:69
+165            android:name="com.google.android.gms.version"
+165-->[com.google.android.gms:play-services-basement:18.3.0] C:\Users\pro\.gradle\caches\8.9\transforms\93a8b81d39f91947f6c46d71aa34b0d5\transformed\play-services-basement-18.3.0\AndroidManifest.xml:22:13-58
+166            android:value="@integer/google_play_services_version" />
+166-->[com.google.android.gms:play-services-basement:18.3.0] C:\Users\pro\.gradle\caches\8.9\transforms\93a8b81d39f91947f6c46d71aa34b0d5\transformed\play-services-basement-18.3.0\AndroidManifest.xml:23:13-66
+167
+168        <activity
+168-->[com.razorpay:core:1.0.22] C:\Users\pro\.gradle\caches\8.9\transforms\3522ffcb280d0a9a43824679116974e3\transformed\core-1.0.22\AndroidManifest.xml:35:9-49:20
+169            android:name="com.razorpay.DeeplinkActivity"
+169-->[com.razorpay:core:1.0.22] C:\Users\pro\.gradle\caches\8.9\transforms\3522ffcb280d0a9a43824679116974e3\transformed\core-1.0.22\AndroidManifest.xml:36:13-57
+170            android:exported="true"
+170-->[com.razorpay:core:1.0.22] C:\Users\pro\.gradle\caches\8.9\transforms\3522ffcb280d0a9a43824679116974e3\transformed\core-1.0.22\AndroidManifest.xml:37:13-36
+171            android:theme="@style/CheckoutTheme" >
+171-->[com.razorpay:core:1.0.22] C:\Users\pro\.gradle\caches\8.9\transforms\3522ffcb280d0a9a43824679116974e3\transformed\core-1.0.22\AndroidManifest.xml:38:13-49
+172            <intent-filter>
+172-->[com.razorpay:core:1.0.22] C:\Users\pro\.gradle\caches\8.9\transforms\3522ffcb280d0a9a43824679116974e3\transformed\core-1.0.22\AndroidManifest.xml:39:13-48:29
+173                <action android:name="android.intent.action.VIEW" />
+173-->C:\Users\pro\Documents\GitHub\TEXLearn-Android\app\src\main\AndroidManifest.xml:32:5-57
+173-->C:\Users\pro\Documents\GitHub\TEXLearn-Android\app\src\main\AndroidManifest.xml:32:13-54
+174
+175                <category android:name="android.intent.category.DEFAULT" />
+175-->C:\Users\pro\Documents\GitHub\TEXLearn-Android\app\src\main\AndroidManifest.xml:34:5-64
+175-->C:\Users\pro\Documents\GitHub\TEXLearn-Android\app\src\main\AndroidManifest.xml:34:15-61
+176                <category android:name="android.intent.category.BROWSABLE" />
+176-->C:\Users\pro\Documents\GitHub\TEXLearn-Android\app\src\main\AndroidManifest.xml:35:5-66
+176-->C:\Users\pro\Documents\GitHub\TEXLearn-Android\app\src\main\AndroidManifest.xml:35:15-63
+177
+178                <data
+178-->C:\Users\pro\Documents\GitHub\TEXLearn-Android\app\src\main\AndroidManifest.xml:37:5-40:42
+179                    android:host="com.samrambakeralam.texlearn.debug"
+179-->C:\Users\pro\Documents\GitHub\TEXLearn-Android\app\src\main\AndroidManifest.xml:39:9-49
+180                    android:scheme="razorpay" />
+180-->C:\Users\pro\Documents\GitHub\TEXLearn-Android\app\src\main\AndroidManifest.xml:38:9-31
+181            </intent-filter>
+182        </activity>
+183
+184        <receiver
+184-->[com.razorpay:core:1.0.22] C:\Users\pro\.gradle\caches\8.9\transforms\3522ffcb280d0a9a43824679116974e3\transformed\core-1.0.22\AndroidManifest.xml:51:9-53:40
+185            android:name="com.razorpay.UpiChooserSelectionReceiver"
+185-->[com.razorpay:core:1.0.22] C:\Users\pro\.gradle\caches\8.9\transforms\3522ffcb280d0a9a43824679116974e3\transformed\core-1.0.22\AndroidManifest.xml:52:13-68
+186            android:exported="false" />
+186-->[com.razorpay:core:1.0.22] C:\Users\pro\.gradle\caches\8.9\transforms\3522ffcb280d0a9a43824679116974e3\transformed\core-1.0.22\AndroidManifest.xml:53:13-37
+187    </application>
+188
+189</manifest>

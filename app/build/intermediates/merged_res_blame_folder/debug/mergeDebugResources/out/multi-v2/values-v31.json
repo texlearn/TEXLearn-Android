@@ -1,0 +1,20 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.samrambakeralam.texlearn.app-mergeDebugResources-21:/values-v31/values-v31.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\pro\\.gradle\\caches\\8.9\\transforms\\1707a0e8ca57aeebbefdd97740033573\\transformed\\core-splashscreen-1.0.1\\res\\values-v31\\values-v31.xml",
+                    "from": {
+                        "startLines": "2,9",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,473",
+                        "endLines": "8,13",
+                        "endColumns": "12,12",
+                        "endOffsets": "468,697"
+                    }
+                }
+            ]
+        }
+    ]
+}

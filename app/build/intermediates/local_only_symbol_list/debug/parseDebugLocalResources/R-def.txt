@@ -1,0 +1,9 @@
+R_DEF: Internal format may change without notice
+local
+color launcher_icon_background
+drawable ic_launcher_foreground
+drawable texlearn_logo
+mipmap ic_launcher
+mipmap ic_launcher_round
+style AppTheme
+style Theme.TEXLearn.Splash

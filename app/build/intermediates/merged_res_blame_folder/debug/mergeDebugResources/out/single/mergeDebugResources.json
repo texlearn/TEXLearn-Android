@@ -1,0 +1,58 @@
+[
+    {
+        "merged": "com.samrambakeralam.texlearn.app-debug-23:/mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "com.samrambakeralam.texlearn.app-main-25:/mipmap-hdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "com.samrambakeralam.texlearn.app-debug-23:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.samrambakeralam.texlearn.app-main-25:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "com.samrambakeralam.texlearn.app-debug-23:/drawable_ic_launcher_foreground.png.flat",
+        "source": "com.samrambakeralam.texlearn.app-main-25:/drawable/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "com.samrambakeralam.texlearn.app-debug-23:/mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "com.samrambakeralam.texlearn.app-main-25:/mipmap-xxhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "com.samrambakeralam.texlearn.app-debug-23:/mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "com.samrambakeralam.texlearn.app-main-25:/mipmap-xxxhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "com.samrambakeralam.texlearn.app-debug-23:/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "com.samrambakeralam.texlearn.app-main-25:/mipmap-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.samrambakeralam.texlearn.app-debug-23:/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "com.samrambakeralam.texlearn.app-main-25:/mipmap-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.samrambakeralam.texlearn.app-debug-23:/drawable_texlearn_logo.webp.flat",
+        "source": "com.samrambakeralam.texlearn.app-main-25:/drawable/texlearn_logo.webp"
+    },
+    {
+        "merged": "com.samrambakeralam.texlearn.app-debug-23:/mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "com.samrambakeralam.texlearn.app-main-25:/mipmap-mdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "com.samrambakeralam.texlearn.app-debug-23:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.samrambakeralam.texlearn.app-main-25:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.samrambakeralam.texlearn.app-debug-23:/mipmap-mdpi_ic_launcher.png.flat",
+        "source": "com.samrambakeralam.texlearn.app-main-25:/mipmap-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.samrambakeralam.texlearn.app-debug-23:/mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "com.samrambakeralam.texlearn.app-main-25:/mipmap-xhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "com.samrambakeralam.texlearn.app-debug-23:/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "com.samrambakeralam.texlearn.app-main-25:/mipmap-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.samrambakeralam.texlearn.app-debug-23:/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "com.samrambakeralam.texlearn.app-main-25:/mipmap-xxxhdpi/ic_launcher.png"
+    }
+]

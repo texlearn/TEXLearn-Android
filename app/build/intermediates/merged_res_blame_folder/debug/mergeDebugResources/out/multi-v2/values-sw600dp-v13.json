@@ -1,0 +1,20 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.samrambakeralam.texlearn.app-mergeDebugResources-21:/values-sw600dp-v13/values-sw600dp-v13.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\pro\\.gradle\\caches\\8.9\\transforms\\b7a6aedaa6fe15db48ac2b82f65677db\\transformed\\standard-core-1.7.22\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,93",
+                        "endLines": "2,15",
+                        "endColumns": "37,12",
+                        "endOffsets": "88,871"
+                    }
+                }
+            ]
+        }
+    ]
+}
