@@ -55,6 +55,13 @@ class MainActivity : Activity(), PaymentResultWithDataListener {
     companion object {
         private const val START_URL =
             "https://texlearn.in/"
+        
+        private const val PAYMENT_BRIDGE_NAME = "TEXLearnBridge"
+
+        private val PAYMENT_BRIDGE_ORIGINS = setOf(
+        "https://texlearn.in",
+        "https://samrambakeralam.github.io"
+    )
 
         private val INTERNAL_HOSTS = setOf(
             "texlearn.in",
@@ -221,8 +228,10 @@ class MainActivity : Activity(), PaymentResultWithDataListener {
         }
     }
 
-    @Synchronized
-    private fun clearEncryptedPendingPayment() {
+   
+@Synchronized
+private fun clearEncryptedPendingPayment(): Boolean {
+    return try {
         getSharedPreferences(
             PAYMENT_PREFS,
             Context.MODE_PRIVATE
@@ -230,7 +239,17 @@ class MainActivity : Activity(), PaymentResultWithDataListener {
             .edit()
             .remove(PAYMENT_PREFS_KEY)
             .commit()
+
+    } catch (error: Exception) {
+        Log.e(
+            "TEXLearnPayment",
+            "Unable to clear encrypted pending payment",
+            error
+        )
+        false
     }
+}
+
 
     @SuppressLint("SetJavaScriptEnabled")
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -417,6 +436,7 @@ webView.webChromeClient = object : WebChromeClient() {
         )
 
                Checkout.preload(applicationContext)
+               registerPaymentMessageBridge()
 
         if (savedInstanceState == null) {
             val incomingUrl = intent?.dataString
@@ -436,6 +456,263 @@ webView.webChromeClient = object : WebChromeClient() {
             webView.restoreState(savedInstanceState)
         }
     }
+
+    private fun registerPaymentMessageBridge() {
+
+    if (
+        !WebViewFeature.isFeatureSupported(
+            WebViewFeature.WEB_MESSAGE_LISTENER
+        )
+    ) {
+        Log.e(
+            "TEXLearnPayment",
+            "Secure WebMessageListener is not supported."
+        )
+        return
+    }
+
+    WebViewCompat.addWebMessageListener(
+        webView,
+        PAYMENT_BRIDGE_NAME,
+        PAYMENT_BRIDGE_ORIGINS
+    ) { _, message, sourceOrigin, isMainFrame, replyProxy ->
+
+        if (!isMainFrame) {
+            Log.w(
+                "TEXLearnPayment",
+                "Rejected payment bridge message from iframe."
+            )
+            return@addWebMessageListener
+        }
+
+        Log.d(
+            "TEXLearnPayment",
+            "Received secure bridge message from ${sourceOrigin.host}"
+        )
+
+        handlePaymentBridgeMessage(
+            message,
+            sourceOrigin,
+            isMainFrame,
+            replyProxy
+        )
+    }
+}
+
+    
+private fun handlePaymentBridgeMessage(
+    message: WebMessageCompat,
+    sourceOrigin: Uri,
+    isMainFrame: Boolean,
+    replyProxy: JavaScriptReplyProxy
+) {
+    runOnUiThread {
+        var requestId = ""
+
+        try {
+            if (!isMainFrame) {
+                throw SecurityException("Main frame required.")
+            }
+
+          val currentPageUri = Uri.parse(webView.url ?: "")
+
+val sourcePort = if (sourceOrigin.port == -1) {
+    443
+} else {
+    sourceOrigin.port
+}
+
+val currentPagePort = if (currentPageUri.port == -1) {
+    443
+} else {
+    currentPageUri.port
+}
+
+if (
+    sourceOrigin.scheme != "https" ||
+    sourceOrigin.host !in setOf(
+        "texlearn.in",
+        "samrambakeralam.github.io"
+    ) ||
+    currentPageUri.scheme != sourceOrigin.scheme ||
+    currentPageUri.host != sourceOrigin.host ||
+    currentPagePort != sourcePort
+) {
+    throw SecurityException("Untrusted or mismatched origin.")
+}
+
+            // Restrict every payment-storage operation to checkout.html.
+            if (!isTrustedCheckoutPage()) {
+                throw SecurityException(
+                    "Payment bridge is only available on the checkout page."
+                )
+            }
+
+            val request = JSONObject(message.data)
+            requestId = request.optString("requestId")
+
+            if (
+                requestId.isBlank() ||
+                requestId.length > 128
+            ) {
+                throw IllegalArgumentException("Invalid request ID.")
+            }
+
+            val action = request.optString("action")
+            val payload = request.optJSONObject("payload")
+                ?: JSONObject()
+
+            when (action) {
+
+                "openCheckout" -> {
+                    val key = payload.optString("key")
+                    val orderId = payload.optString("order_id")
+                    val amount = payload.optInt("amount", 0)
+                    val currency = payload.optString("currency")
+
+                    if (
+                        key.isBlank() ||
+                        orderId.isBlank() ||
+                        amount <= 0 ||
+                        currency != "INR"
+                    ) {
+                        throw IllegalArgumentException(
+                            "Invalid payment order details."
+                        )
+                    }
+
+                    val nativeCheckout = Checkout()
+                    nativeCheckout.setKeyID(key)
+                    checkout = nativeCheckout
+
+                    nativeCheckout.open(
+                        this@MainActivity,
+                        payload
+                    )
+
+                    sendPaymentBridgeResponse(
+                        replyProxy,
+                        requestId,
+                        true
+                    )
+                }
+
+                "savePendingPayment" -> {
+                    val saved = saveEncryptedPendingPayment(
+                        payload.toString()
+                    )
+
+                    if (!saved) {
+                        throw IllegalStateException(
+                            "Unable to save pending payment."
+                        )
+                    }
+
+                    sendPaymentBridgeResponse(
+                        replyProxy,
+                        requestId,
+                        true
+                    )
+                }
+
+                "getPendingPayment" -> {
+                    val raw = getEncryptedPendingPayment()
+
+                    val result = if (raw.isBlank()) {
+                        null
+                    } else {
+                        JSONObject(raw)
+                    }
+
+                    sendPaymentBridgeResponse(
+                        replyProxy,
+                        requestId,
+                        true,
+                        result
+                    )
+                }
+
+             
+"clearPendingPayment" -> {
+    val cleared = clearEncryptedPendingPayment()
+
+    if (!cleared) {
+        throw IllegalStateException(
+            "Unable to clear pending payment."
+        )
+    }
+
+    sendPaymentBridgeResponse(
+        replyProxy,
+        requestId,
+        true
+    )
+}
+
+
+                else -> {
+                    throw IllegalArgumentException(
+                        "Unsupported payment bridge action."
+                    )
+                }
+            }
+
+        } catch (error: Exception) {
+            Log.e(
+                "TEXLearnPayment",
+                "Payment bridge request failed",
+                error
+            )
+
+            if (requestId.isNotBlank()) {
+                sendPaymentBridgeResponse(
+                    replyProxy,
+                    requestId,
+                    false,
+                    error = "Payment bridge request failed."
+                )
+            }
+        }
+    }
+}
+
+private fun isTrustedCheckoutPage(): Boolean {
+    val uri = Uri.parse(webView.url ?: "")
+
+    return uri.scheme == "https" && (
+        (
+            uri.host == "texlearn.in" &&
+            uri.path == "/checkout.html"
+        ) ||
+        (
+            uri.host == "samrambakeralam.github.io" &&
+            uri.path == "/TEXLearn/checkout.html"
+        )
+    )
+}
+
+private fun sendPaymentBridgeResponse(
+    replyProxy: JavaScriptReplyProxy,
+    requestId: String,
+    success: Boolean,
+    result: JSONObject? = null,
+    error: String? = null
+) {
+    val response = JSONObject()
+        .put("requestId", requestId)
+        .put("success", success)
+
+    if (result != null) {
+        response.put("result", result)
+    }
+
+    if (!error.isNullOrBlank()) {
+        response.put("error", error)
+    }
+
+    replyProxy.postMessage(response.toString())
+}
+
 
         private inner class NativePaymentBridge {
 
@@ -505,23 +782,12 @@ webView.webChromeClient = object : WebChromeClient() {
             return getEncryptedPendingPayment()
         }
 
-        @JavascriptInterface
-        fun clearPendingPayment(): Boolean {
-            return try {
-                clearEncryptedPendingPayment()
-                true
-            } catch (error: Exception) {
-                Log.e(
-                    "TEXLearnPayment",
-                    "Unable to clear pending payment",
-                    error
-                )
-                false
-            }
-        }
-    }
+@JavascriptInterface
+fun clearPendingPayment(): Boolean {
+    return clearEncryptedPendingPayment()
+}
+}
 
-    
 override fun onPaymentSuccess(
     razorpayPaymentID: String?,
     paymentData: PaymentData
