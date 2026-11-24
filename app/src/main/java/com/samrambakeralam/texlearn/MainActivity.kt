@@ -181,22 +181,24 @@ class MainActivity : Activity(), PaymentResultWithDataListener {
         }
     }
 
-    @Synchronized
+       @Synchronized
     private fun getEncryptedPendingPayment(): String {
-        return try {
-            val encodedData = getSharedPreferences(
-                PAYMENT_PREFS,
-                Context.MODE_PRIVATE
-            ).getString(PAYMENT_PREFS_KEY, null)
-                ?: return ""
+        val encodedData = getSharedPreferences(
+            PAYMENT_PREFS,
+            Context.MODE_PRIVATE
+        ).getString(PAYMENT_PREFS_KEY, null)
+            ?: return ""
 
+        return try {
             val combinedData = Base64.decode(
                 encodedData,
                 Base64.NO_WRAP
             )
 
             if (combinedData.size <= 12) {
-                return ""
+                throw IllegalStateException(
+                    "Stored pending payment data is invalid."
+                )
             }
 
             val iv = combinedData.copyOfRange(0, 12)
@@ -224,7 +226,10 @@ class MainActivity : Activity(), PaymentResultWithDataListener {
                 "Unable to retrieve encrypted payment state",
                 error
             )
-            ""
+            throw IllegalStateException(
+                "Unable to retrieve pending payment.",
+                error
+            )
         }
     }
 
