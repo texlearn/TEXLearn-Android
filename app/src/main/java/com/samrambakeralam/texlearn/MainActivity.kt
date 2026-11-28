@@ -260,7 +260,7 @@ private fun clearEncryptedPendingPayment(): Boolean {
         installSplashScreen()
         super.onCreate(savedInstanceState)
 
-        window.statusBarColor = Color.rgb(234, 248, 240)
+        window.statusBarColor = Color.WHITE
         window.navigationBarColor = Color.WHITE
 
         val root = FrameLayout(this).apply {
