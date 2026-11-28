@@ -16,7 +16,6 @@ import android.os.Environment
 import android.view.View
 import android.webkit.CookieManager
 import android.webkit.DownloadListener
-import android.webkit.JavascriptInterface
 import android.webkit.URLUtil
 import android.webkit.WebChromeClient
 import android.webkit.WebResourceRequest
@@ -181,7 +180,7 @@ class MainActivity : Activity(), PaymentResultWithDataListener {
         }
     }
 
-        @Synchronized
+    @Synchronized
     private fun getEncryptedPendingPayment(): String {
         val encodedData = getSharedPreferences(
             PAYMENT_PREFS,
@@ -325,12 +324,6 @@ private fun clearEncryptedPendingPayment(): Boolean {
         CookieManager.getInstance().setAcceptCookie(true)
         CookieManager.getInstance()
             .setAcceptThirdPartyCookies(webView, true)
-
-        // Native payment bridge. Checkout requests are validated below.
-        webView.addJavascriptInterface(
-            NativePaymentBridge(),
-            "TEXLearnNative"
-        )
 
         webView.webViewClient = object : WebViewClient() {
 
@@ -512,7 +505,7 @@ private fun handlePaymentBridgeMessage(
     replyProxy: JavaScriptReplyProxy
 ) {
     runOnUiThread {
-        var requestId = ""
+    var requestId = ""
 
         try {
             if (!isMainFrame) {
@@ -554,7 +547,7 @@ if (
             }
 
             val request = JSONObject(message.data)
-            requestId = request.optString("requestId")
+            requestId = request.optString("requestId", "")
 
             if (
                 requestId.isBlank() ||
@@ -638,22 +631,21 @@ if (
                 }
 
              
-"clearPendingPayment" -> {
-    val cleared = clearEncryptedPendingPayment()
+                "clearPendingPayment" -> {
+                    val cleared = clearEncryptedPendingPayment()
 
-    if (!cleared) {
-        throw IllegalStateException(
-            "Unable to clear pending payment."
-        )
-    }
+                    if (!cleared) {
+                        throw IllegalStateException(
+                            "Unable to clear pending payment."
+                        )
+                    }
 
-    sendPaymentBridgeResponse(
-        replyProxy,
-        requestId,
-        true
-    )
-}
-
+                    sendPaymentBridgeResponse(
+                        replyProxy,
+                        requestId,
+                        true
+                    )
+                }
 
                 else -> {
                     throw IllegalArgumentException(
@@ -716,81 +708,6 @@ private fun sendPaymentBridgeResponse(
     }
 
     replyProxy.postMessage(response.toString())
-}
-
-
-        private inner class NativePaymentBridge {
-
-        @JavascriptInterface
-        fun openCheckout(optionsJson: String) {
-            runOnUiThread {
-                try {
-                    val currentUri = Uri.parse(webView.url ?: "")
-
-                    // Accept checkout requests only from our checkout page.
-                    if (
-                        !(
-                            (
-                                currentUri.host == "texlearn.in" &&
-                                currentUri.path == "/checkout.html"
-                            ) ||
-                            (
-                                currentUri.host == "samrambakeralam.github.io" &&
-                                currentUri.path == "/TEXLearn/checkout.html"
-                            )
-                        )
-                    ) {
-                        throw IllegalStateException(
-                            "Native checkout is not allowed on this page."
-                        )
-                    }
-
-                    val options = JSONObject(optionsJson)
-
-                    val key = options.optString("key")
-                    val orderId = options.optString("order_id")
-                    val amount = options.optInt("amount", 0)
-                    val currency = options.optString("currency")
-
-                    if (
-                        key.isBlank() ||
-                        orderId.isBlank() ||
-                        amount <= 0 ||
-                        currency.isBlank()
-                    ) {
-                        throw IllegalArgumentException(
-                            "Incomplete payment order details."
-                        )
-                    }
-
-                    val nativeCheckout = Checkout()
-                    nativeCheckout.setKeyID(key)
-                    checkout = nativeCheckout
-
-                    nativeCheckout.open(this@MainActivity, options)
-
-                } catch (error: Exception) {
-                    notifyWebError(
-                        error.message ?: "Unable to open native checkout."
-                    )
-                }
-            }
-        }
-
-        @JavascriptInterface
-        fun savePendingPayment(paymentJson: String): Boolean {
-            return saveEncryptedPendingPayment(paymentJson)
-        }
-
-        @JavascriptInterface
-        fun getPendingPayment(): String {
-            return getEncryptedPendingPayment()
-        }
-
-@JavascriptInterface
-fun clearPendingPayment(): Boolean {
-    return clearEncryptedPendingPayment()
-}
 }
 
 override fun onPaymentSuccess(
@@ -1116,7 +1033,6 @@ override fun onNewIntent(intent: Intent) {
     override fun onDestroy() {
         if (::webView.isInitialized) {
             webView.stopLoading()
-            webView.removeJavascriptInterface("TEXLearnNative")
             webView.destroy()
         }
 
