@@ -342,27 +342,13 @@ private fun clearEncryptedPendingPayment(): Boolean {
                 return routeUrl(url)
             }
 
-          override fun onPageFinished(
-    view: WebView,
-    url: String
-) {
-    super.onPageFinished(view, url)
-
-    // Add Android-only class
-    view.evaluateJavascript(
-        "document.documentElement.classList.add('texlearn-android')"
-    ) { _ ->
-
-        // Verify that the class was added
-        view.evaluateJavascript(
-            "document.documentElement.classList.contains('texlearn-android')"
-        ) { result ->
-            Log.d("TEXLearnApp", "Android styling enabled: $result")
-        }
-    }
-
-    progressBar.visibility = View.GONE
-}
+            override fun onPageFinished(
+                view: WebView,
+                url: String
+            ) {
+                super.onPageFinished(view, url)
+                progressBar.visibility = View.GONE
+            }
         }
 
      
