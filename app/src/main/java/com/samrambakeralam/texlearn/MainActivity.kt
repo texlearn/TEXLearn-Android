@@ -342,13 +342,23 @@ private fun clearEncryptedPendingPayment(): Boolean {
                 return routeUrl(url)
             }
 
-            override fun onPageFinished(
-                view: WebView,
-                url: String
-            ) {
-                super.onPageFinished(view, url)
-                progressBar.visibility = View.GONE
-            }
+           override fun onPageFinished(
+    view: WebView,
+    url: String
+) {
+    super.onPageFinished(view, url)
+
+    view.evaluateJavascript(
+        """
+        document.documentElement.classList.add(
+            'texlearn-android'
+        );
+        """.trimIndent(),
+        null
+    )
+
+    progressBar.visibility = View.GONE
+}
         }
 
      
